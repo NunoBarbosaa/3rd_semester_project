@@ -1,0 +1,138 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant ":SummaryUI" as UI
+participant ":ShipDistanceController" as CTRL
+participant ":ShipDistance" as SD
+
+
+
+TRAFFICMANAGER -> UI: Asks for the summary of a ship's movement
+activate UI
+deactivate UI
+
+
+UI --> TRAFFICMANAGER: Asks for one code
+
+
+
+TRAFFICMANAGER -> UI: Inserts the code and the variable
+activate UI
+deactivate UI
+
+UI -> CTRL: shipDistCalc(int mmsi, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> SD: setMmsi (mmsi)
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setTotalMovements(ShipDistance.getTotalMovements(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setTotalTime(ShipDistance.getTotalTime(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setMaxCog(ShipDistance.maxCog(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setMaxSog(ShipDistance.maxSog(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setStartTime(ShipDistance.minTime(mmsi, shipMap).getDateTime())
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setEndTime(ShipDistance.maxTime(mmsi, shipMap).getDateTime())
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setDepLatitude(ShipDistance.minTime(mmsi, shipMap).getLat())
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setDepLong(ShipDistance.minTime(mmsi, shipMap).getLon())
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setArrLatitude(ShipDistance.maxTime(mmsi, shipMap).getLat())
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setArrLong(ShipDistance.maxTime(mmsi, shipMap).getLon())
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setMeanCog(ShipDistance.meanCog(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setMeanSog(ShipDistance.meanSog(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setDeltDis(ShipDistance.distDelta(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setTravDis(ShipDistance.totalDistance(mmsi, shipMap))
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+CTRL -> SD: setVesselName(ship1.getVesselName()
+activate CTRL
+deactivate CTRL
+activate SD
+deactivate SD
+
+
+CTRL -> UI: return shipDistance
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+deactivate UI
+
+@enduml

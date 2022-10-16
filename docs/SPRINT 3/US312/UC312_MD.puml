@@ -1,0 +1,22 @@
+@startuml
+class Client {
+}
+
+class Containers {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+
+Client "1" -down- "1..*"Containers :> owns
+
+
+@enduml

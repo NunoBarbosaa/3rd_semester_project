@@ -1,0 +1,5 @@
+@startuml
+left to right direction
+:Port Manager: --> (UC407 -  Intend to generate, a week in advance, the loading and unloading map based on ships and trucks load manifests and corresponding travel plans, to anticipate the level of sufficient and necessary resources)
+
+@enduml

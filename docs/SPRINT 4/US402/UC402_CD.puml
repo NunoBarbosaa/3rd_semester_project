@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+class KnowShortestPathUI {
+}
+
+class CountryController {
++landPath(String origem,String dest)
++seaPath(String origem, String dest)
++seaLandPath(String origem, String dest)
++throughDestination(String origem, String dest, ArrayList<String> paises)
+}
+
+class MatrixGraph {
++clone()
++removeVertex(V vert)
+}
+
+class Port {
++getPort()
+}
+
+class Algorithms {
++shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+}
+
+KnowShortestPathUI"1" ..>"1..*" CountryController
+CountryController "1" --> "1..*" MatrixGraph : uses
+CountryController "1" --> "1" Algorithms : uses
+CountryController "1" --> "1" Port : uses
+
+
+@enduml

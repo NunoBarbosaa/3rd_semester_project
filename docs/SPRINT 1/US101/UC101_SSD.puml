@@ -1,0 +1,19 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : Needs to import ships from a text file and order by the respective codes
+
+SYSTEM -> TRAFFICMANAGER: Asks for the file path and the orders
+
+TRAFFICMANAGER -> SYSTEM : Inserts the file path with the ships ordered by your codes
+
+SYSTEM --> TRAFFICMANAGER : Informs operation success
+
+
+@enduml

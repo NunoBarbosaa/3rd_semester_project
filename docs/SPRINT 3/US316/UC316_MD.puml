@@ -1,0 +1,22 @@
+@startuml
+class PortStaff {
+}
+
+class Containers {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+PortStaff"1" -down- "1..*" Containers :> knows
+
+
+
+@enduml

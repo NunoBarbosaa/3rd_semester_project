@@ -1,0 +1,45 @@
+@startuml
+autonumber
+'hide footbox
+actor "Port Staff" as PORTSTAFF
+
+participant "position.c" as position
+participant "position.s" as pc
+
+
+PORTSTAFF -> position: Check if a container is there or not
+activate position
+deactivate position
+position --> PORTSTAFF: Insert containerId
+activate position
+deactivate position
+PORTSTAFF -> position: Input the data
+activate position
+deactivate position
+
+position -> pc: int verifyContainer(short x,short y,short z,int containers[8][8][8])
+activate position
+deactivate position
+activate pc
+deactivate pc
+
+pc -> position: ret
+activate pc
+deactivate pc
+activate position
+deactivate position
+
+
+
+
+
+
+
+
+
+
+
+position --> PORTSTAFF: Informs operation success
+activate position
+deactivate position
+@enduml

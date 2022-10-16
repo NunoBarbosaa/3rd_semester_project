@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Port Staff: --> (UC316 - Know the total number of occupied slots)
+@enduml

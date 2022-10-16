@@ -1,0 +1,17 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Client" as CLIENT
+participant ":System" as SYSTEM
+activate SYSTEM
+activate CLIENT
+
+CLIENT -> SYSTEM : Know the current situation of a specific container being used to transport my goods
+
+SYSTEM --> CLIENT: Asks for containerId and the date
+
+CLIENT -> SYSTEM: Input the data
+
+SYSTEM --> CLIENT: Informs operation success
+@enduml

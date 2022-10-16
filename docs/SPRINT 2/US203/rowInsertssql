@@ -1,0 +1,92 @@
+INSERT INTO ADDRESS(addressId,postalCode, country, description) VALUES (1,'1110-242','ESPANHA','Rua dos Morangos Madrid');
+INSERT INTO ADDRESS(addressId,postalCode, country, description) VALUES (2,'4020-242','Portugal','Rua dos Pessegos Lisboa');
+INSERT INTO ADDRESS(addressId,postalCode, country, description) VALUES (3,'1120-242','POLONIA','Rua Pol VARSOVIA');
+INSERT INTO ADDRESS(addressId,postalCode, country, description) VALUES (4,'1111-242','USA' ,'Av. houston Texas');
+
+INSERT INTO app_ROLEs(roleId, name) VALUES (1,'Ship Captain');
+INSERT INTO app_ROLEs(roleId, name) VALUES (2,'Client');
+INSERT INTO app_ROLEs(roleId, name) VALUES (3,'Traffic Manager');
+INSERT INTO app_ROLEs(roleId, name) VALUES (4,'Port Manager');
+INSERT INTO app_ROLEs(roleId, name) VALUES (5,'Ship Crew Member');
+
+
+INSERT INTO app_USER(userId, username, password) VALUES (11,'Nuno','123');
+INSERT INTO app_USER(userId, username, password) VALUES (12,'Diogo','1234');
+INSERT INTO app_USER(userId, username, password) VALUES (13,'João','12345');
+INSERT INTO app_USER(userId, username, password) VALUES (14,'Kevin','123456');
+
+
+INSERT INTO SHIP(mmsi, imo,callSign,ship_name, ship_length, width, draft, ship_capacity, vesselType,userId) VALUES(1234498, 'IMO1235646', 31252,'Barco12',36,23,34,355,23,14);
+INSERT INTO SHIP(mmsi, imo,callSign,ship_name, ship_length, width, draft, ship_capacity, vesselType,userId) VALUES(123456781, 'IMO1235611', 31111,'WeFly',36,23,34,355,21,13);
+INSERT INTO SHIP(mmsi, imo,callSign,ship_name, ship_length, width, draft, ship_capacity, vesselType,userId) VALUES(123116781, 'IMO1233611', 312211,'WeRun',36,23,34,600,22,12);
+INSERT INTO SHIP(mmsi, imo,callSign,ship_name, ship_length, width, draft, ship_capacity, vesselType,userId) VALUES(122216781, 'IMO1238611', 3155151,'Boat2',36,23,34,300,24,11);
+
+INSERT INTO shipPositions(BaseDataTime,latitude,longitude,SOG,COG,ship_Heading,TranscieverClass,MMSI) VALUES('2000-01-01',456,678,3.78,9.06,3,'algo3',1234498);
+INSERT INTO shipPositions(BaseDataTime,latitude,longitude,SOG,COG,ship_Heading,TranscieverClass,MMSI) VALUES('2000-01-01',156,278,3.78,9.06,3,'algo3',123456781);
+
+
+INSERT INTO energyGenerator (enGen_number,powerOutput,MMSI) VALUES(1,1.2,1234498);
+INSERT INTO energyGenerator (enGen_number,powerOutput,MMSI) VALUES(2,1.2,1234498);
+INSERT INTO energyGenerator (enGen_number,powerOutput,MMSI) VALUES(1,1.4,123456781);
+INSERT INTO energyGenerator (enGen_number,powerOutput,MMSI) VALUES(3,1.4,123116781);
+
+INSERT INTO continent(continentId,country,continent) VALUES(1, 'USA','America do Norte');
+INSERT INTO continent(continentId,country,continent) VALUES(2, 'Inglaterra','Europa');
+
+INSERT INTO wareHouse(wareHouseId, warehouse_name,latitude, longitude, continentId) VALUES(2, 'Harbour', 10,23,1);
+INSERT INTO wareHouse(wareHouseId, warehouse_name,latitude, longitude, continentId) VALUES(1, 'Long Beach', 10,23,1);
+INSERT INTO wareHouse(wareHouseId, warehouse_name,latitude, longitude, continentId) VALUES(3, 'Houston', 10,23,1);
+
+INSERT INTO ship_PORT(identification, port_name,latitude, longitude,continentId) VALUES(2, 'Harbour', 35,47,1);
+INSERT INTO ship_PORT(identification, port_name,latitude, longitude,continentId) VALUES(6, 'Houston', 40,-24,1);
+INSERT INTO ship_PORT(identification, port_name,latitude, longitude,continentId) VALUES(7, 'Long Beach', 2,3,1);
+INSERT INTO ship_PORT(identification, port_name,latitude, longitude,continentId) VALUES(8, 'Hampton Road', -10,56,1);
+INSERT INTO ship_PORT(identification, port_name,latitude, longitude,continentId) VALUES(9, 'Mobile', -10.3,35,1);
+
+INSERT INTO trip(tripId, MMSI, startDate, endDate, departureLong, departureLat, arrivalLong, arrivalLat) VALUES(1,123116781,'2000-01-01','2000-01-03',55,56,77,78);
+INSERT INTO trip(tripId, MMSI, startDate, endDate, departureLong, departureLat, arrivalLong, arrivalLat) VALUES(2,1234498,'2000-01-02','2000-01-03',55,56,77,78);
+
+INSERT INTO trip_port(tripId, identification,port_order) VALUES(1,2,1);
+INSERT INTO trip_port(tripId, identification,port_order) VALUES(1,6,2);
+INSERT INTO trip_port(tripId, identification,port_order) VALUES(1,7,3);
+
+INSERT INTO trip_port(tripId, identification,port_order) VALUES(2,2,1);
+INSERT INTO trip_port(tripId, identification,port_order) VALUES(2,6,2);
+INSERT INTO trip_port(tripId, identification,port_order) VALUES(2,7,3);
+
+INSERT INTO trip_users(tripId,userId) VALUES(1,11);
+INSERT INTO trip_users(tripId,userId) VALUES(1,13);
+INSERT INTO trip_users(tripId,userId) VALUES(1,12);
+INSERT INTO trip_users(tripId,userId) VALUES(2,14);
+
+
+INSERT INTO CARGOMANIFEST(cargoManifestId, tripId, MMSI, departureDate, ArrivalDate) VALUES (1,1,1234498,TO_TIMESTAMP('2015-09-10 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-09-11 04:22','YYYY-MM-DD HH:MI'));
+INSERT INTO CARGOMANIFEST(cargoManifestId, tripId, MMSI, departureDate, ArrivalDate) VALUES (2,1,1234498,TO_TIMESTAMP('2015-09-15 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-09-16 04:22','YYYY-MM-DD HH:MI'));
+INSERT INTO CARGOMANIFEST(cargoManifestId, tripId, MMSI, departureDate, ArrivalDate) VALUES (3,1,1234498,TO_TIMESTAMP('2015-10-10 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-18 04:22','YYYY-MM-DD HH:MI'));
+INSERT INTO CARGOMANIFEST(cargoManifestId, tripId, MMSI, departureDate, ArrivalDate) VALUES (4,1,123456781,TO_TIMESTAMP('2015-10-10 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-18 04:22','YYYY-MM-DD HH:MI'));
+INSERT INTO CARGOMANIFEST(cargoManifestId, tripId, MMSI, departureDate, ArrivalDate) VALUES (5,1,123456781,TO_TIMESTAMP('2015-09-15 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-09-16 04:22','YYYY-MM-DD HH:MI'));
+
+
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(99,98,92.92,91.1,'cod1','certi1','repairrec1',1,0.3,1,2,20,123116781,11);
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(98,99,92.92,91.1,'cod2','certi2','repairrec2',1,0.3,1,6,20,123116781,11);
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(97,97,92.92,91.1,'cod3','certi3','repairrec3',1,0.3,1,7,20,123116781,11);
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(96,96,92.92,91.1,'cod4','certi4','repairrec4',1,0.3,2,2,20,123116781,13);
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(95,95,92.92,91.1,'cod5','certi5','repairrec5',1,0.3,2,9,20,123116781,13);
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(94,94,92.92,91.1,'cod6','certi6','repairrec6',1,0.3,3,2,20,1234498,12);
+INSERT INTO ship_Container(containerNumber,checkDigit,tareWeight,maxVolume,isoCode,certificate,repairRec,refrigerated,temp,wareHouseId,identification,cargoManifestId,MMSI,userId) VALUES(93,93,92.92,91.1,'cod7','certi7','repairrec7',1,0.3,2,2,20,1234498,12);
+
+INSERT INTO container_trip(tripId, containerNumber) VALUES(1,99);
+INSERT INTO container_trip(tripId, containerNumber) VALUES(1,98);
+INSERT INTO container_trip(tripId, containerNumber) VALUES(2,97);
+
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES('5353',1,6,7,6,2,8,TO_TIMESTAMP('2015-09-10 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-09-17 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES('5773',1,6,8,6,3,8,TO_TIMESTAMP('2015-09-10 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-17 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES ('53453',2,7,8,1,3,36,TO_TIMESTAMP('2015-10-17 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES ('53333',2,7,8,4,1,26,TO_TIMESTAMP('2015-10-17 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES ('55435',2,7,8,4,6,46,TO_TIMESTAMP('2015-10-17 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight)VALUES ('54355',2,7,8,4,6,16,TO_TIMESTAMP('2015-10-17 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-10-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES ('3553',3,8,2,1,3,36,TO_TIMESTAMP('2015-10-19 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-11-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES ('1153',3,8,2,1,1,0,TO_TIMESTAMP('2015-10-19 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2015-11-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+INSERT INTO container_cargo(containerNumber, cargoManifestId, arrivalportId,departureportId, xCoord,yCoord,zCoord,containerDepDate, containerArrDate,payload,grossWeight) VALUES ('2153',3,8,2,1,6,16,TO_TIMESTAMP('2015-10-19 04:22','YYYY-MM-DD HH:MI'),TO_TIMESTAMP('2030-11-18 04:22','YYYY-MM-DD HH:MI'),240,1000);
+
+-- truncate table container_cargo;

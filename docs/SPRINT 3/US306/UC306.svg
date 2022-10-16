@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="247.5px" preserveAspectRatio="none" style="width:1302px;height:247px;background:#FFFFFF;" version="1.1" viewBox="0 0 1302 247" width="1302.5px" zoomAndPan="magnify"><defs><filter height="300%" id="f4ctunfvq5yr9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[f9c57c0c524dc8b8ac943d4b81f101b1]
+entity Port Manager--><ellipse cx="61.25" cy="80" fill="#FEFECE" filter="url(#f4ctunfvq5yr9)" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.875;"/><path d="M61.25,90 L61.25,123.75 M45,100 L77.5,100 M61.25,123.75 L45,142.5 M61.25,123.75 L77.5,142.5 " fill="none" filter="url(#f4ctunfvq5yr9)" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="107.5" x="7.5" y="167.5415">Port Manager</text><ellipse cx="739.0338" cy="120.3068" fill="#FEFECE" filter="url(#f4ctunfvq5yr9)" rx="549.0338" ry="112.8068" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="1070" x="204.0338" y="124.9674">UC306 -  Know the occupancy rate of each warehouse and an estimate of the containers leaving the warehouse during the next 30 days</text><!--MD5=[d8a9934fa162682e0872a1d213a30c14]
+link Port Manager to UC306 -  Know the occupancy rate of each warehouse and an estimate of the containers leaving the warehouse during the next 30 days--><path d="M115.4625,120 C134.3125,120 157.425,120 183.5125,120 " fill="none" id="Port Manager-to-UC306 -  Know the occupancy rate of each warehouse and an estimate of the containers leaving the warehouse during the next 30 days" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="189.85,120,178.6,115,183.6,120,178.6,125,189.85,120" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[ff0bba74ce759c0009ff9ab2d12623ca]
+@startuml
+left to right direction
+:Port Manager: - -> (UC306 -  Know the occupancy rate of each warehouse and an estimate of the containers leaving the warehouse during the next 30 days)
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

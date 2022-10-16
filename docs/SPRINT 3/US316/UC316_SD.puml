@@ -1,0 +1,32 @@
+@startuml
+autonumber
+'hide footbox
+actor "Port Staff" as PORTSTAFF
+
+participant "position.c" as position
+participant "position.s" as pc
+
+
+PORTSTAFF -> position: Know the total number of occupied slots
+activate position
+deactivate position
+position --> PORTSTAFF: Insert the slot
+activate position
+deactivate position
+PORTSTAFF -> position: Input the data
+activate position
+deactivate position
+
+position -> pc: checkSlots(short x,short y,short z, int containers[][y][z])
+activate position
+deactivate position
+activate pc
+deactivate pc
+
+pc -> position: ret
+activate pc
+deactivate pc
+activate position
+deactivate position
+
+@enduml

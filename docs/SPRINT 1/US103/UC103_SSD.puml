@@ -1,0 +1,26 @@
+@startuml
+autonumber
+hide footbox
+activate SYSTEM
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : Asks for positional messages temporally organized on a period or date
+
+SYSTEM --> TRAFFICMANAGER : Asks for a period
+
+
+TRAFFICMANAGER -> SYSTEM : Inserts period
+
+SYSTEM --> TRAFFICMANAGER : Asks for two dates
+
+TRAFFICMANAGER -> SYSTEM : Inserts two dates
+
+
+
+
+SYSTEM --> TRAFFICMANAGER : Informs operation success
+
+
+@enduml

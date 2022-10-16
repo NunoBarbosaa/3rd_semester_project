@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class TrafficManager {
+}
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+
+
+class ShipDistance {
+- mmsi
+- vesselName
+- startTime
+- endTime
+- totalMovements
+- totalTime
+- maxSog
+- meanSog
+- maxCog
+- meanCog
+- depLatitude
+- arrLatitude
+- depLong
+- arrLong
+- travDist
+- deltDist
+}
+
+
+
+TrafficManager"1" -right- "1..*"Ship : > controls
+Ship "1" -up- "1..*"ShipDistance :> has
+
+@enduml

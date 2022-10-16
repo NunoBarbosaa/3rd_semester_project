@@ -1,0 +1,17 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Staff" as PORTSTAFF
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTSTAFF
+
+PORTSTAFF -> SYSTEM : Know the total number of occupied slots
+
+SYSTEM --> PORTSTAFF: Insert the slot
+
+PORTSTAFF -> SYSTEM: Inputs the data
+
+SYSTEM --> PORTSTAFF: Informs operation success
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class GetTopNShipsByMostKmFastShipsUI {
+}
+
+class ShipDistanceController {
++ shipsOrderByMostKmFastShips (String dateOfCheck, String hourCheck,String dateOfCheck2, String hourCheck2, int numberOfResults, HashMap<Ship,List<ShipDynamicFields>> shipMap)
+}
+
+class ShipDistance {
++ mostKmFastShips(String dateOfCheck, String hourCheck,String dateOfCheck2, String hourCheck2, int numberOfResults, HashMap<Ship,List<ShipDynamicFields>> shipMap)
++ compare(ShipDistance p1, ShipDistance p2)
+}
+
+GetTopNShipsByMostKmFastShipsUI ..> ShipDistanceController
+ShipDistanceController -> ShipDistance :> uses
+@enduml

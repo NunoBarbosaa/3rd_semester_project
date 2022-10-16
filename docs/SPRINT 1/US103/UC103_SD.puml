@@ -1,0 +1,146 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "PositionsUI" as UI
+participant ":ShipPositionsController" as CTRL
+participant ":ShipDynamicFields" as SDF
+participant ":Ship" as ship
+participant ":AVL" as AVL
+
+
+TRAFFICMANAGER -> UI: Asks for positional messages temporally organized on a period or date
+activate UI
+deactivate UI
+
+
+UI --> TRAFFICMANAGER: Asks for a period
+
+
+
+TRAFFICMANAGER -> UI: Inserts period
+activate UI
+deactivate UI
+
+
+UI -> CTRL:checkPositions(String dateOfCheck, String hourCheck, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+activate UI
+activate CTRL
+deactivate CTRL
+deactivate UI
+
+
+CTRL -> SDF: checkLastPosition(int mmsi, int hour, int minutes, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+CTRL->ship: getMmsi()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> AVL: position.insert(checkShip)
+activate CTRL
+deactivate CTRL
+activate AVL
+deactivate AVL
+
+CTRL -> UI: return position
+activate CTRL
+activate UI
+deactivate CTRL
+deactivate UI
+
+UI --> TRAFFICMANAGER: Asks for two dates
+activate UI
+deactivate UI
+
+TRAFFICMANAGER -> UI: Inserts two dates
+activate UI
+deactivate UI
+
+UI -> CTRL: checkPositionsBetweenDates(String dateOfCheck, String hourCheck, String DateOfCheck2, String hourCheck2, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+activate UI
+deactivate  UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship: getMmsi()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> SDF: getLat()
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+
+CTRL -> SDF: getLon()
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+CTRL -> SDF: getSog()
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+CTRL -> SDF: getCog()
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+
+CTRL -> SDF: getHeading()
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+CTRL -> SDF: getTransceiverClass()
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+
+
+CTRL -> SDF: path = new ShipDynamicFields(ship.getMmsi(), diaAno + hora, din.getLat(),din.getLon(), din.getSog(), din.getCog(), din.getHeading(), din.getTransceiverClass());
+activate CTRL
+deactivate CTRL
+activate SDF
+deactivate SDF
+
+CTRL -> AVL: position.insert(path)
+activate CTRL
+deactivate CTRL
+activate AVL
+deactivate AVL
+
+CTRL -> UI: return position
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+deactivate UI
+
+@enduml

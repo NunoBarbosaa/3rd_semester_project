@@ -1,0 +1,101 @@
+@startuml
+@startuml
+autonumber
+'hide footbox
+actor "Port Manager" as PORTMANAGER
+
+participant "ImportPortUI" as UI
+participant ":LoaderController" as CTRL
+participant ":TwoDTree" as 2tree
+participant ":Node" as node
+participant ":Port" as port
+
+PORTMANAGER -> UI : Needs to import ports from a text file and create a 2D-tree with port locations
+activate UI
+deactivate UI
+UI -> PORTMANAGER: Asks for the file path and the port locations
+activate UI
+deactivate UI
+
+PORTMANAGER -> UI : Inserts the file path with the locations
+activate UI
+deactivate UI
+
+UI -> CTRL : loadPortsTwoDTree(String fileName)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> port : port = new Port(String continent, String country, int code, String port, Double lat, Double lon)
+activate CTRL
+deactivate CTRL
+activate port
+deactivate port
+
+CTRL -> 2tree : insert(Port element)
+activate CTRL
+deactivate CTRL
+activate 2tree
+deactivate 2tree
+
+2tree -> node :  Node(Port info)
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+2tree -> node : getInfo()
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+2tree -> node : setLeft()
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+2tree -> node : setRight()
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+
+2tree  -> port : getLat()
+activate 2tree
+deactivate 2tree
+activate port
+deactivate port
+
+2tree -> port : getLon()
+activate 2tree
+deactivate 2tree
+activate  port
+deactivate port
+
+2tree -> CTRL : return currentNode()
+activate 2tree
+deactivate 2tree
+activate CTRL
+deactivate CTRL
+
+
+
+
+
+
+CTRL -> UI : return doisDCallSign
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+UI --> PORTMANAGER : Informs operation success
+activate UI
+deactivate UI
+
+@enduml

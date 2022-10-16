@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : Needs to find the closest port of a ship given its CallSign, on a certain DateTime
+
+SYSTEM -> TRAFFICMANAGER: Asks for the code and the date
+
+TRAFFICMANAGER -> SYSTEM : Inserts the code and the time
+
+SYSTEM --> TRAFFICMANAGER : Informs operation success
+
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+autonumber
+hide footbox
+activate SYSTEM
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate TRAFFICMANAGER
+TRAFFICMANAGER -> SYSTEM : Asks for a list of the ships ordered by Travelled Distance or Number Of Movements
+
+
+SYSTEM --> TRAFFICMANAGER : Informs operation success
+deactivate SYSTEM
+
+@enduml

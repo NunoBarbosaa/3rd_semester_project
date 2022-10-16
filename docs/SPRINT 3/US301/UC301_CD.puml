@@ -1,0 +1,33 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class BuildGraphUI{
+}
+
+class CountryController {
++ buildGraph(int numberOfPorts)
+}
+
+class MatrixGraph {
++ addVertex(V vert)
++ addEdge(V vOrig, V vDest, E weight)
+}
+
+class Country {
++ getFronteiras()
+}
+
+class GPS {
++ dist = distanceBetweenCoordinates(double lat1, double lon1, double lat2, double lon2)
+}
+
+
+
+CountryController <.up. BuildGraphUI
+CountryController "1" --> "1..*" MatrixGraph : uses
+CountryController "1" --> "1..*" Country : uses
+CountryController "1" --> "1..*" GPS : uses
+@enduml
+
+
+

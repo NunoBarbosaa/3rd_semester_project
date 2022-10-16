@@ -1,0 +1,62 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+
+class ShipRoute {
+- mmsi
+- departureLat
+- arrivalLat
+- departureLong
+- arrivalLong
+- travelDistance
+}
+
+class ShipPair {
+- mmsi1
+- mmsi2
+- departureDistance
+- arrivalDistance
+- travelDistance1
+}
+
+class ShipMovement {
+- mmsi
+- baseDateTime
+- lat
+- lon
+- sog
+- cog
+- heading
+- vesselName
+- imo
+- callSign
+- vesselType
+- lenght
+- width
+- draft
+- cargo
+- transceiverClass
+}
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+class TrafficManager{
+}
+
+TrafficManager"1" -> "1..*"Ship :> controls
+Ship"1" -down- "1..*" ShipRoute :> has
+Ship"1" -up- "1..*" ShipMovement :> has
+Ship"1" -> "1..*" ShipPair  :> has
+@enduml

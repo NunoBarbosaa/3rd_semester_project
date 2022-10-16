@@ -1,0 +1,7 @@
+@startuml
+
+left to right direction
+
+
+:Traffic manager: --> (UC103 - Have the positional messages temporally organised and associated with each of the ships)
+@enduml

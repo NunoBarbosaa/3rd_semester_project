@@ -1,0 +1,6 @@
+@startuml
+
+left to right direction
+
+:Traffic manager: --> (UC107 - Return pairs of ships with routes with close departure/arrival coordinates  and with different Travelled Distance)
+@enduml

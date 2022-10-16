@@ -1,0 +1,142 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "FindShipUI" as UI
+participant ":FindShipController" as CTRL
+participant ":Ship" as ship
+participant ":ShipOrderedByIMO" as shipIMO
+participant ":ShipOrderedByCallSign" as shipCallSign
+participant ":AVL" as Avl
+
+
+TRAFFICMANAGER -> UI: Asks for the details of a ship
+activate UI
+deactivate UI
+
+
+UI --> TRAFFICMANAGER: Asks for one code
+
+
+
+TRAFFICMANAGER -> UI: Inserts the code
+activate UI
+deactivate UI
+
+
+UI -> CTRL: findShipByMmsi(AVL avl, int mmsi)
+activate UI
+activate CTRL
+deactivate CTRL
+deactivate UI
+
+
+
+CTRL -> ship: ship=findShip(AVL avl, int mmsi)
+activate ship
+activate CTRL
+deactivate ship
+deactivate CTRL
+
+ship -> Avl: isEmpty()
+activate ship
+deactivate ship
+activate Avl
+deactivate Avl
+
+ship -> Avl: preOrder()
+activate ship
+deactivate ship
+activate Avl
+deactivate Avl
+
+CTRL -> UI: return ship
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI -> CTRL: findShipByIMO(AVL avl, String imo)
+activate UI
+activate CTRL
+deactivate CTRL
+deactivate UI
+
+
+
+CTRL -> shipIMO: ship= findShipByIMO(AVL avl , String imo)
+activate shipIMO
+activate CTRL
+deactivate shipIMO
+deactivate CTRL
+
+shipIMO -> Avl: isEmpty()
+activate shipIMO
+deactivate shipIMO
+activate Avl
+deactivate Avl
+
+shipIMO -> Avl: preOrder()
+activate shipIMO
+deactivate shipIMO
+activate Avl
+deactivate Avl
+
+CTRL -> UI: return ship
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+UI -> CTRL: findShipByCallSign(AVL avl, String callSign)
+activate UI
+activate CTRL
+deactivate CTRL
+deactivate UI
+
+
+
+CTRL -> shipCallSign: ship=findShipByCallSign(AVL avl , String callSign)
+activate shipCallSign
+activate CTRL
+deactivate shipCallSign
+deactivate CTRL
+
+shipCallSign -> Avl: isEmpty()
+activate shipCallSign
+deactivate shipCallSign
+activate Avl
+deactivate Avl
+
+shipCallSign -> Avl: preOrder()
+activate shipCallSign
+deactivate shipCallSign
+activate Avl
+deactivate Avl
+
+CTRL -> UI: return ship
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+deactivate UI
+
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class ShipRouteUI {
+}
+
+class ShipRouteController {
++ loadCsvFile(final String filePath)
++ calculateShipRoute(List<ShipMovement> shipMovementList)
++ filterShipRoutesByTravelDistance(List<ShipRoute> shipRouteList, int minTravelDistance)
++ filterShipRoutesByPairs(List<ShipRoute> shipRouteList, int minDistanceDifference)
+}
+
+class ShipRoute {
++ calculateShipRouteDetails(List<ShipMovement> shipMovementList)
++ getTravelDistance()
++ distance(double lat1, double lat2, double lon1, double lon2)
++ getMmsi()
++ getDepartureLat()
++ getDepartureLong()
++ getArrivalLat()
++ getArrivalLong()
++ getTravelDistance()
+}
+
+class ShipPair {
++ setMmsi1(getMmsi())
++ setMmsi2(getMmsi())
++ setTravelDistance1(getTravelDistance())
++ setTravelDistance2(getTravelDistance())
++ setArrivalDistance(arrivalDistance)
++ setDepartureDistance(departureDistance)
++ order(List<ShipPair> shipPairList)
++ compare(Object o1, Object o2)
+}
+
+class ShipMovement {
++ getBaseDateTime()
++ getLat()
++ getLon()
+}
+
+ShipRouteUI ..> ShipRouteController
+ShipRouteController -> ShipRoute :> uses
+ShipRouteController -left- ShipPair :> uses
+ShipRouteController -down-  ShipMovement :> uses
+ShipRoute -down-  ShipMovement :> uses
+
+@enduml

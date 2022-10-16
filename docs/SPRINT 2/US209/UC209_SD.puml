@@ -1,0 +1,94 @@
+@startuml
+@startuml
+autonumber
+'hide footbox
+actor "Ship Captain" as SHIPCAPTAIN
+
+participant ":OccupancyShipUI" as UI
+participant ":ShipOccupancyController" as CTRL
+participant ":ConnectionFactory" as cf
+participant ":CargoManifestStore" as cfs
+participant ":DatabaseConnection" as dc
+
+SHIPCAPTAIN -> UI : Wants to know the occupancy rate of a given ship at a given moment.
+activate UI
+deactivate UI
+
+UI --> SHIPCAPTAIN: Asks for the Ship`s MMSI
+activate UI
+deactivate UI
+SHIPCAPTAIN -> UI : Inserts the code
+activate UI
+deactivate UI
+UI --> SHIPCAPTAIN : Asks for the specific date
+activate  UI
+deactivate UI
+SHIPCAPTAIN -> UI : Inserts the date
+activate UI
+deactivate UI
+
+UI -> CTRL:shipCapacityCalcByMoment(int MMSI, String date)
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+CTRL -> cf: getInstance()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf -> CTRL: return instance
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getDatabaseConnection()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf -> CTRL: return dataBaseConnection
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cfs: shipOccupancyByDate(DatabaseConnection databaseConnection, int MMSI,String date)
+activate CTRL
+deactivate CTRL
+activate cfs
+deactivate cfs
+
+cfs -> dc: getConnection()
+activate cfs
+deactivate cfs
+activate dc
+deactivate dc
+
+dc -> cfs:return connection
+activate dc
+deactivate dc
+activate cfs
+deactivate cfs
+
+cfs -> CTRL: return result
+activate cfs
+deactivate cfs
+activate CTRL
+deactivate CTRL
+
+CTRL -> UI: return result
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+UI --> SHIPCAPTAIN : Informs operation success
+activate UI
+deactivate UI
+@enduml

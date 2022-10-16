@@ -1,0 +1,32 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class OccupancyShipUI{
+}
+
+class ShipOccupancyController {
++ shipCapacityCalcByMoment(int MMSI, String date)
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class CargoManifestStore {
++ shipOccupancyByDate(DatabaseConnection databaseConnection, int MMSI,String date)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+ShipOccupancyController <.up. OccupancyShipUI
+ShipOccupancyController "1" --> "1..*" ConnectionFactory : uses
+ShipOccupancyController "1" --> "1" CargoManifestStore : uses
+CargoManifestStore "1" --> "1..*" DatabaseConnection : uses
+
+
+
+@enduml

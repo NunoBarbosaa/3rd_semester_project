@@ -1,0 +1,20 @@
+@startuml
+autonumber
+hide footbox
+activate SYSTEM
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : Asks for the summary of a ship's movement
+
+SYSTEM --> TRAFFICMANAGER : Asks for one code
+
+
+TRAFFICMANAGER -> SYSTEM : Inserts the code and the variable
+
+
+SYSTEM --> TRAFFICMANAGER : Informs operation success
+
+
+@enduml

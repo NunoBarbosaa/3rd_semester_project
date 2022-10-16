@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class OrderShipsUI {
+}
+
+class ShipDistanceController {
++ orderShipsByTdOrNumbOfMov(HashMap<Ship, List<ShipDynamicFields>> shipMap)
+}
+
+class ShipDistance {
++ orderShips(HashMap<Ship,List<ShipDynamicFields>> shipMap)
+}
+
+OrderShipsUI ..> ShipDistanceController
+ShipDistanceController -> ShipDistance :> uses
+@enduml

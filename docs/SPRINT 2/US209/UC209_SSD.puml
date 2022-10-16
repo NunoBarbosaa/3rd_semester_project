@@ -1,0 +1,23 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Ship Captain" as SHIPCAPTAIN
+participant ":System" as SYSTEM
+activate SYSTEM
+activate SHIPCAPTAIN
+
+SHIPCAPTAIN -> SYSTEM : Wants to know the occupancy rate of a given ship at a given moment.
+
+SYSTEM --> SHIPCAPTAIN: Asks for the Ship`s MMSI
+
+SHIPCAPTAIN -> SYSTEM : Inserts the code
+
+SYSTEM --> SHIPCAPTAIN : Asks for the specific date
+
+SHIPCAPTAIN -> SYSTEM : Inserts the date
+
+SYSTEM --> SHIPCAPTAIN: Informs operation success
+
+
+@enduml

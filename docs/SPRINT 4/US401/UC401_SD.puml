@@ -1,0 +1,86 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":KnowPortsUI" as UI
+participant ":CountryController" as CTRL
+participant ":MatrixGraph" as GRAPH
+participant ":Algorithms" as alg
+
+
+TRAFFICMANAGER -> UI : know which ports are more critical (have greater centrality) in this freight network
+activate UI
+deactivate UI
+
+UI -> CTRL: getCentrality(int numberOfPorts)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH: clone()
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+GRAPH -> CTRL: return g
+activate GRAPH
+deactivate GRAPH
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH: removeVertex(V vert)
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+CTRL -> alg: minDistGraph(Graph <V,E> g, Comparator<E> ce, BinaryOperator<E> sum)
+activate CTRL
+deactivate CTRL
+activate alg
+deactivate alg
+
+alg -> CTRL: return new MatrixGraph<>(g.isDirected(), g.vertices(), a)
+activate alg
+deactivate alg
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH:adjVertices(V vert)
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+GRAPH -> CTRL:return outVertices
+activate GRAPH
+deactivate GRAPH
+activate CTRL
+deactivate  CTRL
+
+CTRL -> UI:return finalList
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+activate UI
+deactivate UI
+
+@enduml

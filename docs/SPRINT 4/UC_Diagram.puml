@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+:Traffic manager: --> (UC401 - Know which ports are more critical in this freight network)
+:Traffic manager: --> (UC402 - Know the shortest path between two locals)
+:Traffic manager: --> (UC403 -  know the most efficient circuit that starts from a source location and visits the greatest number of other locations once, returning to the starting location and with the shortest total distance)
+:Fleet Manager: --> (UC405 -   Know the average occupancy rate per manifest of a given ship during a given period)
+:Fleet Manager: --> (UC406 -   Know which ship voyages – place and date of origin and destination)
+:Port Manager: --> (UC407 -  Intend to generate, a week in advance, the loading and unloading map based on ships and trucks load manifests and corresponding travel plans, to anticipate the level of sufficient and necessary resources)
+:Port Staff: --> (UC409 - Fill a dynamically reserved array in memory with all the container's information in its respective place)
+:Ship Chief Electrical Engineer: --> (UC410 - Want to know the amount of needed energy to keep the container at its required temperature)
+:Ship Chief Electrical Engineer: --> (UC411 - Want to receive an alert when the current energy generation units are not enough to provide energy to all refrigerated containers at once)
+:Ship Chief Electrical Engineer: --> (UC412 - Intend to know how much energy to supply, for each container, in a determined trip, with an exterior temperature of 20 ºC, and a travel time of 2h30)
+:Ship Chief Electrical Engineer: --> (UC413 - know the total energy to be supplied to the set of containers in a certain established trip, assuming that all the containers have the same behaviour)
+:Ship Chief Electrical Engineer: --> (UC414 - Know how much energy to supply to the container cargo, in a voyage, depending on the position of the containers on the ship)
+:Ship Captain: --> (UC415 - Know how many auxiliary power equipment are needed for the voyage, knowing that each one supplies a maximum of 75 KW)
+:Ship Master: --> (UC416 -  Intend to submit a summary document, with the following items)
+:Ship Captain: --> (UC417 - Want the technical team to search for at least three types of ship/vessels that are better suited to the task)
+:Ship Captain: --> (UC418 - Want the determine the unladen center of mass for each vessel according to its characteristics)
+:Ship Captain: --> (UC419 - Want to know where to position of a container in the vessel)
+:Ship Captain: --> (UC420 - Want to know for a specific vessel, how much did the vessel sink, assuming that each container has half a ton of mass)
+@enduml

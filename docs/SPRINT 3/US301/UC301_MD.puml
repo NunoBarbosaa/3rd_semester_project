@@ -1,0 +1,39 @@
+@startuml
+class Port {
+ - code
+ - port
+ - continent
+ - country
+ - lat
+ - long
+}
+
+class Country {
+- continent
+- a2
+- a3
+- name
+- pop
+- cap
+- lat
+- longi
+}
+
+class SeaDist {
+- fCountry
+- fPortId
+- fPort
+- tCountry
+- tPortId
+- tPort
+- dist
+}
+
+class Borders {
+}
+
+Port "1" -up- "1..*"Country :> has
+Country "1" -left- "1..*" Borders:> has
+Country "1" -right- "1..*" SeaDist :> has
+
+@enduml

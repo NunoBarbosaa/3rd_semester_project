@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Fleet Manager: --> (UC406 -   Know which ship voyages – place and date of origin and destination)
+@enduml

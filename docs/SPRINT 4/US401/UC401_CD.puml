@@ -1,0 +1,28 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class KnowPortsUI{
+}
+
+class CountryController {
++ getCentrality(int numberOfPorts)
+}
+
+class MatrixGraph {
++ clone()
++ removeVertex(V vert)
++ adjVertices(V vert)
+}
+
+class Algorithms {
++ minDistGraph(Graph <V,E> g, Comparator<E> ce, BinaryOperator<E> sum)
+}
+
+
+CountryController <.up. KnowPortsUI
+CountryController "1" --> "1..*" MatrixGraph : uses
+CountryController "1" --> "1" Algorithms : uses
+
+
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class WareHouseUI{
+}
+
+class WareHouseController {
++ getResourceList(int portId, String day)
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class CargoManifestStore {
++ getResourceList(DatabaseConnection databaseConnection, int portId, String day)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+WareHouseController <.up. WareHouseUI
+WareHouseController "1" --> "1..*" ConnectionFactory : uses
+WareHouseController "1" --> "1" CargoManifestStore : uses
+CargoManifestStore "1" --> "1..*" DatabaseConnection : uses
+
+
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+class FleetManager {
+}
+
+class Ship {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+class ShipRoute {
+- mmsi
+- departureLat
+- arrivalLat
+- departureLong
+- arrivalLong
+- travelDistance
+}
+
+FleetManager"1" -down- "1..*"Ship : > controls
+Ship "1" -down- "1..*"ShipRoute :> has
+
+
+
+
+@enduml

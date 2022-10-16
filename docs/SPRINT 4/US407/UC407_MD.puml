@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+
+
+class Containers {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+class Port {
+ - code
+ - port
+ - continent
+ - country
+ - lat
+ - long
+}
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+
+
+PortManager "1" -right- "1..*"Port : > manages
+Port "1" -down- "1..*"Ship :> contains
+Ship "1" -down- "1..*"Containers  : > has
+Truck "1" -left- "1..*"Containers : > has
+
+
+@enduml

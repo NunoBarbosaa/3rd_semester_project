@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1450px" preserveAspectRatio="none" style="width:2020px;height:1450px;background:#FFFFFF;" version="1.1" viewBox="0 0 2020 1450" width="2020px" zoomAndPan="magnify"><defs><filter height="300%" id="f1t5mvl7oxfl8z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="152.4512"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="454.209"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="1208.6035"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="1284.043"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="1133.1641"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="1208.6035"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="982.2852"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="1057.7246"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="1133.1641"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1905" y="982.2852"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1905" y="1057.7246"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="60" x2="60" y1="112.0117" y2="1344.043"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="606.25" x2="606.25" y1="112.0117" y2="1344.043"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1018.75" x2="1018.75" y1="112.0117" y2="1344.043"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1268.125" x2="1268.125" y1="112.0117" y2="1344.043"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1709.375" x2="1709.375" y1="112.0117" y2="1344.043"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1910.625" x2="1910.625" y1="112.0117" y2="1344.043"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="101.25" x="6.25" y="108.1665">Ship Captain</text><ellipse cx="60.625" cy="18.75" fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" rx="10" ry="10" style="stroke:#A80036;stroke-width:2.5;"/><path d="M60.625,28.75 L60.625,62.5 M44.375,38.75 L76.875,38.75 M60.625,62.5 L44.375,81.25 M60.625,62.5 L76.875,81.25 " fill="none" filter="url(#f1t5mvl7oxfl8z)" style="stroke:#A80036;stroke-width:2.5;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="101.25" x="6.25" y="1360.9595">Ship Captain</text><ellipse cx="60.625" cy="1377.3047" fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" rx="10" ry="10" style="stroke:#A80036;stroke-width:2.5;"/><path d="M60.625,1387.3047 L60.625,1421.0547 M44.375,1397.3047 L76.875,1397.3047 M60.625,1421.0547 L44.375,1439.8047 M60.625,1421.0547 L76.875,1439.8047 " fill="none" filter="url(#f1t5mvl7oxfl8z)" style="stroke:#A80036;stroke-width:2.5;"/><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="161.25" x="523.75" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="143.75" x="532.5" y="93.1665">:OccupancyShipUI</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="161.25" x="523.75" y="1342.793"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="143.75" x="532.5" y="1369.7095">:OccupancyShipUI</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="223.75" x="905" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="206.25" x="913.75" y="93.1665">:ShipOccupancyController</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="223.75" x="905" y="1342.793"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="206.25" x="913.75" y="1369.7095">:ShipOccupancyController</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="172.5" x="1179.375" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="155" x="1188.125" y="93.1665">:ConnectionFactory</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="172.5" x="1179.375" y="1342.793"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="155" x="1188.125" y="1369.7095">:ConnectionFactory</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="180" x="1616.875" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="162.5" x="1625.625" y="93.1665">:CargoManifestStore</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="180" x="1616.875" y="1342.793"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="162.5" x="1625.625" y="1369.7095">:CargoManifestStore</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="188.75" x="1814.375" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="171.25" x="1823.125" y="93.1665">:DatabaseConnection</text><rect fill="#FEFECE" filter="url(#f1t5mvl7oxfl8z)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="188.75" x="1814.375" y="1342.793"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="171.25" x="1823.125" y="1369.7095">:DatabaseConnection</text><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="152.4512"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="454.209"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="1208.6035"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="600.625" y="1284.043"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="1133.1641"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1013.125" y="1208.6035"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1261.875" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="982.2852"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="1057.7246"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1703.125" y="1133.1641"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1905" y="982.2852"/><rect fill="#FFFFFF" filter="url(#f1t5mvl7oxfl8z)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1905" y="1057.7246"/><polygon fill="#A80036" points="585.625,147.4512,598.125,152.4512,585.625,157.4512,590.625,152.4512" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="60.625" x2="593.125" y1="152.4512" y2="152.4512"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="69.375" y="146.3806">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="502.5" x="83.125" y="146.3806">Wants to know the occupancy rate of a given ship at a given moment.</text><polygon fill="#A80036" points="74.375,222.8906,61.875,227.8906,74.375,232.8906,69.375,227.8906" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="66.875" x2="599.375" y1="227.8906" y2="227.8906"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="81.875" y="221.8201">2</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="186.25" x="95.625" y="221.8201">Asks for the Ship`s MMSI</text><polygon fill="#A80036" points="585.625,298.3301,598.125,303.3301,585.625,308.3301,590.625,303.3301" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="60.625" x2="593.125" y1="303.3301" y2="303.3301"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="69.375" y="297.2595">3</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="116.25" x="83.125" y="297.2595">Inserts the code</text><polygon fill="#A80036" points="74.375,373.7695,61.875,378.7695,74.375,383.7695,69.375,378.7695" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="66.875" x2="599.375" y1="378.7695" y2="378.7695"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="81.875" y="372.699">4</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="183.75" x="95.625" y="372.699">Asks for the specific date</text><polygon fill="#A80036" points="585.625,449.209,598.125,454.209,585.625,459.209,590.625,454.209" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="60.625" x2="593.125" y1="454.209" y2="454.209"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="69.375" y="448.1384">5</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="112.5" x="83.125" y="448.1384">Inserts the date</text><polygon fill="#A80036" points="998.125,524.6484,1010.625,529.6484,998.125,534.6484,1003.125,529.6484" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="613.125" x2="1005.625" y1="529.6484" y2="529.6484"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="621.875" y="523.5779">6</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="368.75" x="635.625" y="523.5779">shipCapacityCalcByMoment(int MMSI, String date)</text><polygon fill="#A80036" points="1246.875,600.0879,1259.375,605.0879,1246.875,610.0879,1251.875,605.0879" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1025.625" x2="1254.375" y1="605.0879" y2="605.0879"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="1034.375" y="599.0173">7</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="93.75" x="1048.125" y="599.0173">getInstance()</text><polygon fill="#A80036" points="1039.375,675.5273,1026.875,680.5273,1039.375,685.5273,1034.375,680.5273" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1031.875" x2="1260.625" y1="680.5273" y2="680.5273"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="1046.875" y="674.4568">8</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="107.5" x="1060.625" y="674.4568">return instance</text><polygon fill="#A80036" points="1246.875,750.9668,1259.375,755.9668,1246.875,760.9668,1251.875,755.9668" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1025.625" x2="1254.375" y1="755.9668" y2="755.9668"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="1034.375" y="749.8962">9</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="182.5" x="1048.125" y="749.8962">getDatabaseConnection()</text><polygon fill="#A80036" points="1039.375,826.4063,1026.875,831.4063,1039.375,836.4063,1034.375,831.4063" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1031.875" x2="1260.625" y1="831.4063" y2="831.4063"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="1046.875" y="825.3357">10</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="196.25" x="1069.375" y="825.3357">return dataBaseConnection</text><polygon fill="#A80036" points="1688.125,901.8457,1700.625,906.8457,1688.125,911.8457,1693.125,906.8457" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1025.625" x2="1695.625" y1="906.8457" y2="906.8457"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="1034.375" y="900.7751">11</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="637.5" x="1056.875" y="900.7751">shipOccupancyByDate(DatabaseConnection databaseConnection, int MMSI,String date)</text><polygon fill="#A80036" points="1890,977.2852,1902.5,982.2852,1890,987.2852,1895,982.2852" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1715.625" x2="1897.5" y1="982.2852" y2="982.2852"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="1724.375" y="976.2146">12</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="113.75" x="1746.875" y="976.2146">getConnection()</text><polygon fill="#A80036" points="1729.375,1052.7246,1716.875,1057.7246,1729.375,1062.7246,1724.375,1057.7246" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1721.875" x2="1903.75" y1="1057.7246" y2="1057.7246"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="1736.875" y="1051.6541">13</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="125" x="1759.375" y="1051.6541">return connection</text><polygon fill="#A80036" points="1039.375,1128.1641,1026.875,1133.1641,1039.375,1138.1641,1034.375,1133.1641" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1031.875" x2="1701.875" y1="1133.1641" y2="1133.1641"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="1046.875" y="1127.0935">14</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="86.25" x="1069.375" y="1127.0935">return result</text><polygon fill="#A80036" points="626.875,1203.6035,614.375,1208.6035,626.875,1213.6035,621.875,1208.6035" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="619.375" x2="1011.875" y1="1208.6035" y2="1208.6035"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="634.375" y="1202.533">15</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="86.25" x="656.875" y="1202.533">return result</text><polygon fill="#A80036" points="74.375,1279.043,61.875,1284.043,74.375,1289.043,69.375,1284.043" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="66.875" x2="599.375" y1="1284.043" y2="1284.043"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="81.875" y="1277.9724">16</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="190" x="104.375" y="1277.9724">Informs operation success</text><!--MD5=[a248bb9c0494cf7ac44a0e089c05ea20]
+@startuml
+autonumber
+'hide footbox
+actor "Ship Captain" as SHIPCAPTAIN
+
+participant ":OccupancyShipUI" as UI
+participant ":ShipOccupancyController" as CTRL
+participant ":ConnectionFactory" as cf
+participant ":CargoManifestStore" as cfs
+participant ":DatabaseConnection" as dc
+
+SHIPCAPTAIN -> UI : Wants to know the occupancy rate of a given ship at a given moment.
+activate UI
+deactivate UI
+
+UI - -> SHIPCAPTAIN: Asks for the Ship`s MMSI
+activate UI
+deactivate UI
+SHIPCAPTAIN -> UI : Inserts the code
+activate UI
+deactivate UI
+UI - -> SHIPCAPTAIN : Asks for the specific date
+activate  UI
+deactivate UI
+SHIPCAPTAIN -> UI : Inserts the date
+activate UI
+deactivate UI
+
+UI -> CTRL:shipCapacityCalcByMoment(int MMSI, String date)
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+CTRL -> cf: getInstance()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf -> CTRL: return instance
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getDatabaseConnection()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf -> CTRL: return dataBaseConnection
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cfs: shipOccupancyByDate(DatabaseConnection databaseConnection, int MMSI,String date)
+activate CTRL
+deactivate CTRL
+activate cfs
+deactivate cfs
+
+cfs -> dc: getConnection()
+activate cfs
+deactivate cfs
+activate dc
+deactivate dc
+
+dc -> cfs:return connection
+activate dc
+deactivate dc
+activate cfs
+deactivate cfs
+
+cfs -> CTRL: return result
+activate cfs
+deactivate cfs
+activate CTRL
+deactivate CTRL
+
+CTRL -> UI: return result
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+UI - -> SHIPCAPTAIN : Informs operation success
+activate UI
+deactivate UI
+@enduml
+
+@startuml
+autonumber
+actor "Ship Captain" as SHIPCAPTAIN
+
+participant ":OccupancyShipUI" as UI
+participant ":ShipOccupancyController" as CTRL
+participant ":ConnectionFactory" as cf
+participant ":CargoManifestStore" as cfs
+participant ":DatabaseConnection" as dc
+
+SHIPCAPTAIN -> UI : Wants to know the occupancy rate of a given ship at a given moment.
+activate UI
+deactivate UI
+
+UI - -> SHIPCAPTAIN: Asks for the Ship`s MMSI
+activate UI
+deactivate UI
+SHIPCAPTAIN -> UI : Inserts the code
+activate UI
+deactivate UI
+UI - -> SHIPCAPTAIN : Asks for the specific date
+activate  UI
+deactivate UI
+SHIPCAPTAIN -> UI : Inserts the date
+activate UI
+deactivate UI
+
+UI -> CTRL:shipCapacityCalcByMoment(int MMSI, String date)
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+CTRL -> cf: getInstance()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf -> CTRL: return instance
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getDatabaseConnection()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf -> CTRL: return dataBaseConnection
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cfs: shipOccupancyByDate(DatabaseConnection databaseConnection, int MMSI,String date)
+activate CTRL
+deactivate CTRL
+activate cfs
+deactivate cfs
+
+cfs -> dc: getConnection()
+activate cfs
+deactivate cfs
+activate dc
+deactivate dc
+
+dc -> cfs:return connection
+activate dc
+deactivate dc
+activate cfs
+deactivate cfs
+
+cfs -> CTRL: return result
+activate cfs
+deactivate cfs
+activate CTRL
+deactivate CTRL
+
+CTRL -> UI: return result
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+UI - -> SHIPCAPTAIN : Informs operation success
+activate UI
+deactivate UI
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

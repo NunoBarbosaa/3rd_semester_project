@@ -1,0 +1,13 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : Import data from countries, ports, borders and seadists from the database to build a freight network.
+
+SYSTEM --> TRAFFICMANAGER: Informs operation success
+@enduml

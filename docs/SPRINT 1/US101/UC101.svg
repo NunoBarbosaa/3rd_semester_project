@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="115px" preserveAspectRatio="none" style="width:627px;height:115px;background:#FFFFFF;" version="1.1" viewBox="0 0 627 115" width="627.5px" zoomAndPan="magnify"><defs><filter height="300%" id="fwxyazhn0z7xv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5e659b6272380f9df0bb941f285a2aee]
+entity Traffic manager--><ellipse cx="70" cy="17.5" fill="#FEFECE" filter="url(#fwxyazhn0z7xv)" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.875;"/><path d="M70,27.5 L70,61.25 M53.75,37.5 L86.25,37.5 M70,61.25 L53.75,80 M70,61.25 L86.25,80 " fill="none" filter="url(#fwxyazhn0z7xv)" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="125" x="7.5" y="105.0415">Traffic manager</text><ellipse cx="410.2595" cy="57.3019" fill="#FEFECE" filter="url(#fwxyazhn0z7xv)" rx="202.7595" ry="43.5519" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="367.5" x="226.5095" y="61.9625">UC101 - Import ships from a text file into a BST</text><!--MD5=[8b8cbdb83b94a94a28ef2b7d1b35b1af]
+link Traffic manager to UC101 - Import ships from a text file into a BST--><path d="M132.7625,57.5 C152.825,57.5 176.35,57.5 201.05,57.5 " fill="none" id="Traffic manager-to-UC101 - Import ships from a text file into a BST" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="207.3625,57.5,196.1125,52.5,201.1125,57.5,196.1125,62.5,207.3625,57.5" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[37d835bf83018daeec3eb1ee119c6a3e]
+@startuml
+
+left to right direction
+
+:Traffic manager: - -> (UC101 - Import ships from a text file into a BST)
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,38 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class LoadShipUI{
+}
+
+class LoaderController{
++ loadShipsByMmsi(String fileName)
++ loadShipsByIMO(String fileName)
++ loadShipsByCallSign(String fileName)
+}
+
+class Ship{
++ Ship(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+}
+
+class AVL{
++ insert(E element, Node<E> node)
+}
+
+class ShipOrderedByIMO{
++ ShipOrderedByIMO(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+}
+
+class ShipOrderedByCallSign{
++ ShipOrderedByCallSign(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+}
+
+
+LoaderController <.up. LoadShipUI
+LoaderController "1" --> "1..*" Ship : uses
+LoaderController "1" --> "1" AVL : uses
+LoaderController "1" --> "1" ShipOrderedByIMO : uses
+LoaderController "1" --> "1" ShipOrderedByCallSign : uses
+
+
+@enduml

@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Ship Captain: --> (UC209 - Know the occupancy rate of a given ship at a given moment.)
+@enduml

@@ -1,0 +1,72 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class WareHouseUI{
+}
+
+class WareHouseController {
++ getWareHouseAvailabilty()
++ getWareHouseEstimation()
++ getResourceList(int portId, String day)
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class CargoManifestStore {
++ wareHouseOccupancyByDate (DatabaseConnection databaseConnection)
++ wareHouseEstimation(DatabaseConnection databaseConnection)
++ getAuditTrail(DatabaseConnection databaseConnection)
++ getResourceList(DatabaseConnection databaseConnection, int portId, String day)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+class AuditTrailUI{
+}
+
+class AuditTrailController {
++ getAuditTrail()
+}
+
+class BuildGraphUI{
+}
+
+class CountryController {
++ buildGraph(int numberOfPorts)
+}
+
+class MatrixGraph {
++ addVertex(V vert)
++ addEdge(V vOrig, V vDest, E weight)
+}
+
+class Country {
++ getFronteiras()
+}
+
+class GPS {
++ dist = distanceBetweenCoordinates(double lat1, double lon1, double lat2, double lon2)
+}
+
+
+
+CountryController <.up. BuildGraphUI
+CountryController "1" --> "1..*" MatrixGraph : uses
+CountryController "1" --> "1..*" Country : uses
+CountryController "1" --> "1..*" GPS : uses
+WareHouseController <.up. WareHouseUI
+WareHouseController "1" --> "1..*" ConnectionFactory : uses
+WareHouseController "1" --> "1" CargoManifestStore : uses
+CargoManifestStore "1" --> "1..*" DatabaseConnection : uses
+AuditTrailController <.up. AuditTrailUI
+AuditTrailController "1" --> "1..*" ConnectionFactory : uses
+AuditTrailController "1" --> "1" CargoManifestStore : uses
+
+
+
+@enduml

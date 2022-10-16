@@ -1,0 +1,16 @@
+@startuml
+
+left to right direction
+
+:Traffic manager: --> (UC101 - Import ships from a text file into a BST)
+:Traffic manager: --> (UC102 - Search the details of a ship using any of its codes: MMSI, IMO or  Call Sign)
+:Traffic manager: --> (UC103 - Have the positional messages temporally organised and associated with each of the ships)
+:Traffic manager: --> (UC104 - Make a summary of a ship´s movement)
+:Traffic manager: --> (UC105 - List for all ships the MMSI, the total number of movements, Travelled Distance and Delta Distance)
+:Traffic manager: --> (UC106 - Get the top-N ships with the most kilometres travelled and their average speed)
+:Traffic manager: --> (UC107 - Return pairs of ships with routes with close departure/arrival coordinates  and with different Travelled Distance)
+:Project manager: --> (UC108 - Have a team to develop the data model required to support all the functionality and to fulfill the purpose of the system to develop.)
+:Project manager: --> (UC109 - A team to draft an SQL script to test whether the database verifies all the data integrity restrictions that are required to fulfil the purpose of the system and the business constraints of the UoD.)
+:Project manager: --> (UC110 - A team to define the naming conventions to apply when defining identifiers or writing SQL or PL/SQL code.)
+:Project manager: --> (UC111 - A team to create a SQL script to load the database with a minimum set of data sufficient to carry out data integrity verification and function testing.)
+@enduml

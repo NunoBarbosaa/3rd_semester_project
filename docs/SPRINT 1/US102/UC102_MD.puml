@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+class TrafficManager {
+}
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+
+TrafficManager"1" -- "1..*"Ship : > controls
+@enduml

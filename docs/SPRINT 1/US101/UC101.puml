@@ -1,0 +1,6 @@
+@startuml
+
+left to right direction
+
+:Traffic manager: --> (UC101 - Import ships from a text file into a BST)
+@enduml

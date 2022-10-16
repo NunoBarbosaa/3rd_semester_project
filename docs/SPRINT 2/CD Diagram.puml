@@ -1,0 +1,350 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+
+
+
+class LoadShipUI{
+}
+
+class LoaderController{
++ loadShipsByMmsi(String fileName)
++ loadShipsByIMO(String fileName)
++ loadShipsByCallSign(String fileName)
+}
+
+class Ship{
++ Ship(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+}
+
+class AVL{
++ insert(E element, Node<E> node)
+}
+
+class ShipOrderedByIMO{
++ ShipOrderedByIMO(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+}
+
+class ShipOrderedByCallSign{
++ ShipOrderedByCallSign(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+}
+
+
+LoaderController <.up. LoadShipUI
+LoaderController "1" --> "1..*" Ship : uses
+LoaderController "1" --> "1" AVL : uses
+LoaderController "1" --> "1" ShipOrderedByIMO : uses
+LoaderController "1" --> "1" ShipOrderedByCallSign : uses
+
+
+
+
+class FindShipUI{
+}
+
+class FindShipController{
++ findShipByMmsi(AVL avl, int mmsi)
++ findShipByIMO(AVL avl, String imo)
++ findShipByCallSign(AVL avl, String callSign)
+}
+
+class Ship{
++ findShip(AVL avl, int mmsi)
+}
+
+class AVL{
++ isEmpty()
++ preOrder()
+}
+
+class ShipOrderedByIMO{
++ findShipByIMO(AVL avl , String imo)
+}
+
+class ShipOrderedByCallSign{
++ findShipByCallSign(AVL avl , String callSign)
+}
+
+
+FindShipController <.up. FindShipUI
+FindShipController "1" --> "1..*" Ship : uses
+FindShipController "1" --> "1..*" ShipOrderedByIMO : uses
+FindShipController "1" --> "1" ShipOrderedByCallSign : uses
+Ship "1" --> "1" AVL : uses
+ShipOrderedByIMO "1" --> "1" AVL : uses
+ShipOrderedByCallSign "1" --> "1" AVL : uses
+
+
+
+class PositionsUI{
+}
+
+class ShipPositionsController{
++ checkPositions(String dateOfCheck, String hourCheck, HashMap<Ship, List<ShipDynamicFields>> shipMap)
++checkPositionsBetweenDates(String dateOfCheck, String hourCheck, String DateOfCheck2, String hourCheck2, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+}
+
+
+class ShipDynamicFields{
++checkLastPosition(int mmsi, int hour, int minutes, HashMap<Ship, List<ShipDynamicFields>> shipMap)
++new ShipDynamicFields(ship.getMmsi(), diaAno + hora, din.getLat(),din.getLon(), din.getSog(), din.getCog(), din.getHeading(), din.getTransceiverClass());
++ getLat()
++ getLon()
++ getSog()
++ getCog()
++ getHeading()
++ getTransceiverClass()
+}
+
+class AVL{
++ insert(E element)
+}
+
+ class Ship{
++ getMsi()
+}
+PositionsUI ..> ShipPositionsController
+ShipPositionsController -> ShipDynamicFields :> uses
+ShipPositionsController -left- AVL :> uses
+ShipPositionsController -right- Ship :> uses
+
+
+class SummaryUI {
+}
+
+class ShipDistanceController {
++ shipDistCalc(int mmsi, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+}
+
+class ShipDistance {
++setMmsi (mmsi)
++setTotalMovements(ShipDistance.getTotalMovements(mmsi, shipMap))
++setTotalTime(ShipDistance.getTotalTime(mmsi, shipMap))
++setMaxCog(ShipDistance.maxCog(mmsi, shipMap))
++setMaxSog(ShipDistance.maxSog(mmsi, shipMap))
++setStartTime(ShipDistance.minTime(mmsi, shipMap).getDateTime())
++setEndTime(ShipDistance.maxTime(mmsi, shipMap).getDateTime())
++setDepLatitude(ShipDistance.minTime(mmsi, shipMap).getLat())
++setDepLong(ShipDistance.minTime(mmsi, shipMap).getLon())
++setArrLatitude(ShipDistance.maxTime(mmsi, shipMap).getLat())
++setArrLong(ShipDistance.maxTime(mmsi, shipMap).getLon())
++setMeanCog(ShipDistance.meanCog(mmsi, shipMap))
++setMeanSog(ShipDistance.meanSog(mmsi, shipMap))
++setDeltDis(ShipDistance.distDelta(mmsi, shipMap))
++setTravDis(ShipDistance.totalDistance(mmsi, shipMap))
++setVesselName(ship1.getVesselName()
+}
+
+SummaryUI ..> ShipDistanceController
+ShipDistanceController -down- ShipDistance :> uses
+
+
+class OrderShipsUI {
+}
+
+class ShipDistanceController {
++ orderShipsByTdOrNumbOfMov(HashMap<Ship, List<ShipDynamicFields>> shipMap)
+}
+
+class ShipDistance {
++ orderShips(HashMap<Ship,List<ShipDynamicFields>> shipMap)
+}
+
+OrderShipsUI ..> ShipDistanceController
+ShipDistanceController -> ShipDistance :> uses
+
+
+class GetTopNShipsByMostKmFastShipsUI {
+}
+
+class ShipDistanceController {
++ shipsOrderByMostKmFastShips (String dateOfCheck, String hourCheck,String dateOfCheck2, String hourCheck2, int numberOfResults, HashMap<Ship,List<ShipDynamicFields>> shipMap)
+}
+
+class ShipDistance {
++ mostKmFastShips(String dateOfCheck, String hourCheck,String dateOfCheck2, String hourCheck2, int numberOfResults, HashMap<Ship,List<ShipDynamicFields>> shipMap)
++ compare(ShipDistance p1, ShipDistance p2)
+}
+
+GetTopNShipsByMostKmFastShipsUI ..> ShipDistanceController
+ShipDistanceController -> ShipDistance :> uses
+
+
+class ShipRouteUI {
+}
+
+class ShipRouteController {
++ loadCsvFile(final String filePath)
++ calculateShipRoute(List<ShipMovement> shipMovementList)
++ filterShipRoutesByTravelDistance(List<ShipRoute> shipRouteList, int minTravelDistance)
++ filterShipRoutesByPairs(List<ShipRoute> shipRouteList, int minDistanceDifference)
+}
+
+class ShipRoute {
++ calculateShipRouteDetails(List<ShipMovement> shipMovementList)
++ getTravelDistance()
++ distance(double lat1, double lat2, double lon1, double lon2)
++ getMmsi()
++ getDepartureLat()
++ getDepartureLong()
++ getArrivalLat()
++ getArrivalLong()
++ getTravelDistance()
+}
+
+class ShipPair {
++ setMmsi1(getMmsi())
++ setMmsi2(getMmsi())
++ setTravelDistance1(getTravelDistance())
++ setTravelDistance2(getTravelDistance())
++ setArrivalDistance(arrivalDistance)
++ setDepartureDistance(departureDistance)
++ order(List<ShipPair> shipPairList)
++ compare(Object o1, Object o2)
+}
+
+class ShipMovement {
++ getBaseDateTime()
++ getLat()
++ getLon()
+}
+
+ShipRouteUI ..> ShipRouteController
+ShipRouteController -> ShipRoute :> uses
+ShipRouteController -left- ShipPair :> uses
+ShipRouteController -down-  ShipMovement :> uses
+ShipRoute -down-  ShipMovement :> uses
+
+
+
+class ImportPortUI{
+}
+
+class LoaderController{
++ loadPortsTwoDTree(String fileName)
+}
+
+class Port{
++ Port(String continent, String country, int code, String port, Double lat, Double lon)
++ getLon()
++ getLat()
+}
+
+class TwoDTree{
++ insert(Port element)
+}
+
+class Node {
++ Node(Port info)
++getInfo()
++setLeft()
++setRight()
+}
+
+
+
+
+LoaderController <.up. ImportPortUI
+LoaderController "1" --> "1..*" Port : uses
+LoaderController "1" --> "1" TwoDTree : uses
+TwoDTree "1" --> "1..*" Port : uses
+TwoDTree "1" --> "1..*" Node : uses
+
+
+
+
+class FindPortsUI{
+}
+
+class PortController{
++ findClosestPortToShip(String callSign, Date year, LocalTime hours)
+}
+
+class Ship{
++ Ship()
++ getCallSign()
+}
+
+class ShipDynamicFields{
++ checkLastPositionUpgrade(Date year, LocalTime hours, List<ShipDynamicFields> ships)
+}
+
+class TwoDTree {
++ findNearestNeighbour(double x, double y)
++ findNearestNeighbour(finalShip.getLat(), finalShip.getLon())
+}
+
+class Node {
++ getInfo()
++ setObject(Node node)
+}
+
+class Port {
++ getLat()
++ getLon()
+}
+
+
+
+
+PortController <.up. FindPortsUI
+PortController "1" --> "1..*" Ship : uses
+PortController "1" --> "1..*" ShipDynamicFields : uses
+PortController "1" --> "1" TwoDTree : uses
+TwoDTree "1" --> "1..*" Port : uses
+TwoDTree "1" --> "1..*" Node : uses
+
+
+class OccupancyShipUI{
+}
+
+class ShipOccupancyController {
++ shipCapacityCalcByMoment(int MMSI, String date)
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class CargoManifestStore {
++ shipOccupancyByDate(DatabaseConnection databaseConnection, int MMSI,String date)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+ShipOccupancyController <.up. OccupancyShipUI
+ShipOccupancyController "1" --> "1..*" ConnectionFactory : uses
+ShipOccupancyController "1" --> "1" CargoManifestStore : uses
+CargoManifestStore "1" --> "1..*" DatabaseConnection : uses
+
+class FindContainerUI{
+}
+
+class FindContainerController {
++ findContainer(int containerId)
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class ContainerStore {
++ getContainerInfo(DatabaseConnection databaseConnection, int containerNumber)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+FindContainerController <.up. FindContainerUI
+FindContainerController "1" --> "1..*" ConnectionFactory : uses
+FindContainerController "1" --> "1" ContainerStore : uses
+ContainerStore "1" --> "1..*" DatabaseConnection : uses
+
+
+@enduml

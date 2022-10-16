@@ -1,0 +1,158 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "LoadShipUI" as UI
+participant ":LoaderController" as CTRL
+participant ":Ship" as ship
+participant ":ShipOrderedByIMO" as IMO
+participant ":ShipOrderedByCallSign" as CALLSIGN
+participant ":AVL" as Avl
+
+
+TRAFFICMANAGER -> UI: Needs to import ships from a text file and order by the respective codes
+activate UI
+deactivate UI
+
+
+UI --> TRAFFICMANAGER: Asks for the file path and the orders
+
+
+
+TRAFFICMANAGER -> UI: Inserts the file path with the ships ordered by your codes
+activate UI
+deactivate UI
+
+
+UI -> CTRL: loadShipsByMmsi(String fileName)
+activate CTRL
+deactivate CTRL
+deactivate UI
+
+
+
+CTRL -> ship: ship = new Ship(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+activate ship
+deactivate ship
+deactivate CTRL
+
+CTRL -> Avl: avlMmsi.insert(ship)
+activate CTRL
+deactivate CTRL
+activate Avl
+deactivate Avl
+
+CTRL -> UI:return avlMmsi
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+UI -> CTRL: loadShipsByIMO(String fileName)
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+CTRL -> IMO:shipIMO = new ShipOrderedByIMO(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo):
+activate CTRL
+deactivate CTRL
+activate IMO
+deactivate IMO
+
+
+
+CTRL -> Avl: avlIMO.insert(shipIMO)
+activate CTRL
+deactivate CTRL
+activate Avl
+deactivate Avl
+
+CTRL -> UI: return avlIMO
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+UI -> CTRL: loadShipsByCallSign(String fileName)
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+CTRL -> CALLSIGN: ship = new ShipOrderedByCallSign(int mmsi, String vesselName, String imo, String callSign, int vesselType, int length, int width, float draft, String cargo)
+activate CALLSIGN
+deactivate CALLSIGN
+deactivate CTRL
+
+CTRL -> Avl: avlCallSign.insert(ship)
+activate CTRL
+deactivate CTRL
+activate Avl
+deactivate Avl
+
+CTRL -> UI: return avlCallSign
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+deactivate UI
+
+@enduml

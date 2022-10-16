@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class PortManager {
+}
+
+class Port {
+-code
+-port
+-continent
+-country
+-lat
+-lon
+}
+
+PortManager "1" --> "1..*"Port :> controls
+@enduml

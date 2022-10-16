@@ -1,0 +1,32 @@
+@startuml
+
+class Port {
+ - code
+ - port
+ - continent
+ - country
+ - lat
+ - long
+}
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+
+
+TrafficManager"1" -right- "1..*"Ship : > controls
+Port "1" -down- "1..*"Ship :> contains
+
+
+@enduml

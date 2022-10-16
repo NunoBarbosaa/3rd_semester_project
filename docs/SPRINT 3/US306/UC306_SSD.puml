@@ -1,0 +1,13 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Manager" as PORTMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTMANAGER
+
+PORTMANAGER -> SYSTEM : Know the occupancy rate of each warehouse and an estimate of the containers leaving the warehouse during the next 30 days
+
+SYSTEM --> PORTMANAGER: Informs operation success
+@enduml

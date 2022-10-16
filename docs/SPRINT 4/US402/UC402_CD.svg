@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="482.5px" preserveAspectRatio="none" style="width:1152px;height:482px;background:#FFFFFF;" version="1.1" viewBox="0 0 1152 482" width="1152.5px" zoomAndPan="magnify"><defs><filter height="300%" id="f4o6tgca78hk1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2007e9c623b991874af46d35cf09aaa4]
+class KnowShortestPathUI--><rect codeLine="5" fill="#FEFECE" filter="url(#f4o6tgca78hk1)" height="60" id="KnowShortestPathUI" style="stroke:#A80036;stroke-width:1.875;" width="182.5" x="170.625" y="8.75"/><ellipse cx="189.375" cy="28.75" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M191.875,24.375 Q192.1289,23.75 192.4219,23.4375 Q192.7148,23.125 193.0469,23.125 Q193.6328,23.125 194.0039,23.4766 Q194.375,23.8281 194.375,24.6484 L194.375,26.6016 Q194.375,27.4219 194.0234,27.7734 Q193.6719,28.125 193.125,28.125 Q192.6367,28.125 192.3242,27.9102 Q192.0117,27.6953 191.875,27.1289 Q191.8164,26.7383 191.6016,26.5234 Q191.2109,26.1133 190.5078,25.8789 Q189.8047,25.625 189.1016,25.625 Q188.2227,25.625 187.4805,25.9766 Q186.7578,26.3281 186.1914,27.1094 Q185.625,27.8906 185.625,28.9648 L185.625,30.1172 Q185.625,31.4063 186.6797,32.2656 Q187.7344,33.125 189.6094,33.125 Q190.7227,33.125 191.5039,32.8711 Q191.9531,32.7344 192.4609,32.2852 Q192.793,32.0313 192.9688,31.9531 Q193.1445,31.875 193.3594,31.875 Q193.7695,31.875 194.0625,32.207 Q194.375,32.5195 194.375,32.9688 Q194.375,33.3984 193.9453,33.9063 Q193.3203,34.6484 192.3242,35.0586 Q191.0156,35.625 189.4141,35.625 Q187.5391,35.625 186.0352,34.8828 Q184.8242,34.2969 183.9648,33.0273 Q183.125,31.7578 183.125,30.2539 L183.125,28.8867 Q183.125,27.3242 183.8672,25.957 Q184.6289,24.5898 185.9375,23.8672 Q187.2656,23.125 188.75,23.125 Q189.6484,23.125 190.4297,23.4375 Q191.2109,23.75 191.875,24.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="142.5" x="206.875" y="34.8877">KnowShortestPathUI</text><line style="stroke:#A80036;stroke-width:1.875;" x1="171.875" x2="351.875" y1="48.75" y2="48.75"/><line style="stroke:#A80036;stroke-width:1.875;" x1="171.875" x2="351.875" y1="58.75" y2="58.75"/><!--MD5=[18128de1fe664899f0e69258e7bde033]
+class CountryController--><rect codeLine="8" fill="#FEFECE" filter="url(#f4o6tgca78hk1)" height="129.1797" id="CountryController" style="stroke:#A80036;stroke-width:1.875;" width="463.75" x="30" y="145"/><ellipse cx="196.5625" cy="165" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M199.0625,160.625 Q199.3164,160 199.6094,159.6875 Q199.9023,159.375 200.2344,159.375 Q200.8203,159.375 201.1914,159.7266 Q201.5625,160.0781 201.5625,160.8984 L201.5625,162.8516 Q201.5625,163.6719 201.2109,164.0234 Q200.8594,164.375 200.3125,164.375 Q199.8242,164.375 199.5117,164.1602 Q199.1992,163.9453 199.0625,163.3789 Q199.0039,162.9883 198.7891,162.7734 Q198.3984,162.3633 197.6953,162.1289 Q196.9922,161.875 196.2891,161.875 Q195.4102,161.875 194.668,162.2266 Q193.9453,162.5781 193.3789,163.3594 Q192.8125,164.1406 192.8125,165.2148 L192.8125,166.3672 Q192.8125,167.6563 193.8672,168.5156 Q194.9219,169.375 196.7969,169.375 Q197.9102,169.375 198.6914,169.1211 Q199.1406,168.9844 199.6484,168.5352 Q199.9805,168.2813 200.1563,168.2031 Q200.332,168.125 200.5469,168.125 Q200.957,168.125 201.25,168.457 Q201.5625,168.7695 201.5625,169.2188 Q201.5625,169.6484 201.1328,170.1563 Q200.5078,170.8984 199.5117,171.3086 Q198.2031,171.875 196.6016,171.875 Q194.7266,171.875 193.2227,171.1328 Q192.0117,170.5469 191.1523,169.2773 Q190.3125,168.0078 190.3125,166.5039 L190.3125,165.1367 Q190.3125,163.5742 191.0547,162.207 Q191.8164,160.8398 193.125,160.1172 Q194.4531,159.375 195.9375,159.375 Q196.8359,159.375 197.6172,159.6875 Q198.3984,160 199.0625,160.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="120" x="222.1875" y="171.1377">CountryController</text><line style="stroke:#A80036;stroke-width:1.875;" x1="31.25" x2="492.5" y1="185" y2="185"/><line style="stroke:#A80036;stroke-width:1.875;" x1="31.25" x2="492.5" y1="195" y2="195"/><ellipse cx="43.75" cy="208.75" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="208.75" x="55" y="214.2737">landPath(String origem,String dest)</text><ellipse cx="43.75" cy="226.0449" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="210" x="55" y="231.5686">seaPath(String origem, String dest)</text><ellipse cx="43.75" cy="243.3398" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="240" x="55" y="248.8635">seaLandPath(String origem, String dest)</text><ellipse cx="43.75" cy="260.6348" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="431.25" x="55" y="266.1584">throughDestination(String origem, String dest, ArrayList&lt;String&gt; paises)</text><!--MD5=[b7b072196a724e538165319251b4d539]
+class MatrixGraph--><rect codeLine="15" fill="#FEFECE" filter="url(#f4o6tgca78hk1)" height="94.5898" id="MatrixGraph" style="stroke:#A80036;stroke-width:1.875;" width="166.25" x="8.75" y="371.25"/><ellipse cx="47.75" cy="391.25" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M50.25,386.875 Q50.5039,386.25 50.7969,385.9375 Q51.0898,385.625 51.4219,385.625 Q52.0078,385.625 52.3789,385.9766 Q52.75,386.3281 52.75,387.1484 L52.75,389.1016 Q52.75,389.9219 52.3984,390.2734 Q52.0469,390.625 51.5,390.625 Q51.0117,390.625 50.6992,390.4102 Q50.3867,390.1953 50.25,389.6289 Q50.1914,389.2383 49.9766,389.0234 Q49.5859,388.6133 48.8828,388.3789 Q48.1797,388.125 47.4766,388.125 Q46.5977,388.125 45.8555,388.4766 Q45.1328,388.8281 44.5664,389.6094 Q44,390.3906 44,391.4648 L44,392.6172 Q44,393.9063 45.0547,394.7656 Q46.1094,395.625 47.9844,395.625 Q49.0977,395.625 49.8789,395.3711 Q50.3281,395.2344 50.8359,394.7852 Q51.168,394.5313 51.3438,394.4531 Q51.5195,394.375 51.7344,394.375 Q52.1445,394.375 52.4375,394.707 Q52.75,395.0195 52.75,395.4688 Q52.75,395.8984 52.3203,396.4063 Q51.6953,397.1484 50.6992,397.5586 Q49.3906,398.125 47.7891,398.125 Q45.9141,398.125 44.4102,397.3828 Q43.1992,396.7969 42.3398,395.5273 Q41.5,394.2578 41.5,392.7539 L41.5,391.3867 Q41.5,389.8242 42.2422,388.457 Q43.0039,387.0898 44.3125,386.3672 Q45.6406,385.625 47.125,385.625 Q48.0234,385.625 48.8047,385.9375 Q49.5859,386.25 50.25,386.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="81.25" x="69.75" y="397.3877">MatrixGraph</text><line style="stroke:#A80036;stroke-width:1.875;" x1="10" x2="173.75" y1="411.25" y2="411.25"/><line style="stroke:#A80036;stroke-width:1.875;" x1="10" x2="173.75" y1="421.25" y2="421.25"/><ellipse cx="22.5" cy="435" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="42.5" x="33.75" y="440.5237">clone()</text><ellipse cx="22.5" cy="452.2949" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="133.75" x="33.75" y="457.8186">removeVertex(V vert)</text><!--MD5=[a0bfe97ac0a38e6e74cc1c7c7b744b71]
+class Port--><rect codeLine="20" fill="#FEFECE" filter="url(#f4o6tgca78hk1)" height="77.2949" id="Port" style="stroke:#A80036;stroke-width:1.875;" width="85" x="219.375" y="380"/><ellipse cx="246" cy="400" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M248.5,395.625 Q248.7539,395 249.0469,394.6875 Q249.3398,394.375 249.6719,394.375 Q250.2578,394.375 250.6289,394.7266 Q251,395.0781 251,395.8984 L251,397.8516 Q251,398.6719 250.6484,399.0234 Q250.2969,399.375 249.75,399.375 Q249.2617,399.375 248.9492,399.1602 Q248.6367,398.9453 248.5,398.3789 Q248.4414,397.9883 248.2266,397.7734 Q247.8359,397.3633 247.1328,397.1289 Q246.4297,396.875 245.7266,396.875 Q244.8477,396.875 244.1055,397.2266 Q243.3828,397.5781 242.8164,398.3594 Q242.25,399.1406 242.25,400.2148 L242.25,401.3672 Q242.25,402.6563 243.3047,403.5156 Q244.3594,404.375 246.2344,404.375 Q247.3477,404.375 248.1289,404.1211 Q248.5781,403.9844 249.0859,403.5352 Q249.418,403.2813 249.5938,403.2031 Q249.7695,403.125 249.9844,403.125 Q250.3945,403.125 250.6875,403.457 Q251,403.7695 251,404.2188 Q251,404.6484 250.5703,405.1563 Q249.9453,405.8984 248.9492,406.3086 Q247.6406,406.875 246.0391,406.875 Q244.1641,406.875 242.6602,406.1328 Q241.4492,405.5469 240.5898,404.2773 Q239.75,403.0078 239.75,401.5039 L239.75,400.1367 Q239.75,398.5742 240.4922,397.207 Q241.2539,395.8398 242.5625,395.1172 Q243.8906,394.375 245.375,394.375 Q246.2734,394.375 247.0547,394.6875 Q247.8359,395 248.5,395.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="27.5" x="265.25" y="406.1377">Port</text><line style="stroke:#A80036;stroke-width:1.875;" x1="220.625" x2="303.125" y1="420" y2="420"/><line style="stroke:#A80036;stroke-width:1.875;" x1="220.625" x2="303.125" y1="430" y2="430"/><ellipse cx="233.125" cy="443.75" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="52.5" x="244.375" y="449.2737">getPort()</text><!--MD5=[4533588fb66c6fa31a6e04bf29ae6161]
+class Algorithms--><rect codeLine="24" fill="#FEFECE" filter="url(#f4o6tgca78hk1)" height="77.2949" id="Algorithms" style="stroke:#A80036;stroke-width:1.875;" width="787.5" x="348.125" y="380"/><ellipse cx="699.6875" cy="400" fill="#ADD1B2" rx="13.75" ry="13.75" style="stroke:#A80036;stroke-width:1.25;"/><path d="M702.1875,395.625 Q702.4414,395 702.7344,394.6875 Q703.0273,394.375 703.3594,394.375 Q703.9453,394.375 704.3164,394.7266 Q704.6875,395.0781 704.6875,395.8984 L704.6875,397.8516 Q704.6875,398.6719 704.3359,399.0234 Q703.9844,399.375 703.4375,399.375 Q702.9492,399.375 702.6367,399.1602 Q702.3242,398.9453 702.1875,398.3789 Q702.1289,397.9883 701.9141,397.7734 Q701.5234,397.3633 700.8203,397.1289 Q700.1172,396.875 699.4141,396.875 Q698.5352,396.875 697.793,397.2266 Q697.0703,397.5781 696.5039,398.3594 Q695.9375,399.1406 695.9375,400.2148 L695.9375,401.3672 Q695.9375,402.6563 696.9922,403.5156 Q698.0469,404.375 699.9219,404.375 Q701.0352,404.375 701.8164,404.1211 Q702.2656,403.9844 702.7734,403.5352 Q703.1055,403.2813 703.2813,403.2031 Q703.457,403.125 703.6719,403.125 Q704.082,403.125 704.375,403.457 Q704.6875,403.7695 704.6875,404.2188 Q704.6875,404.6484 704.2578,405.1563 Q703.6328,405.8984 702.6367,406.3086 Q701.3281,406.875 699.7266,406.875 Q697.8516,406.875 696.3477,406.1328 Q695.1367,405.5469 694.2773,404.2773 Q693.4375,403.0078 693.4375,401.5039 L693.4375,400.1367 Q693.4375,398.5742 694.1797,397.207 Q694.9414,395.8398 696.25,395.1172 Q697.5781,394.375 699.0625,394.375 Q699.9609,394.375 700.7422,394.6875 Q701.5234,395 702.1875,395.625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="73.75" x="725.3125" y="406.1377">Algorithms</text><line style="stroke:#A80036;stroke-width:1.875;" x1="349.375" x2="1134.375" y1="420" y2="420"/><line style="stroke:#A80036;stroke-width:1.875;" x1="349.375" x2="1134.375" y1="430" y2="430"/><ellipse cx="361.875" cy="443.75" fill="#84BE84" rx="3.75" ry="3.75" style="stroke:#038048;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="13.75" lengthAdjust="spacing" textLength="755" x="373.125" y="449.2737">shortestPath(Graph&lt;V, E&gt; g, V vOrig, V vDest, Comparator&lt;E&gt; ce, BinaryOperator&lt;E&gt; sum, E zero, LinkedList&lt;V&gt; shortPath)</text><!--MD5=[2c3e09873e158f11d4ff475714bf9ab3]
+link KnowShortestPathUI to CountryController--><path codeLine="28" d="M261.875,68.9 C261.875,87.95 261.875,113.775 261.875,138 " fill="none" id="KnowShortestPathUI-to-CountryController" style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="261.875,144.7875,266.875,133.5375,261.875,138.5375,256.875,133.5375,261.875,144.7875" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="252.0586" y="95.609">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="25" x="235.1953" y="131.6344">1..*</text><!--MD5=[c7ad7d43e3e2ae0f7dacaa78710acd86]
+link CountryController to MatrixGraph--><path codeLine="29" d="M209.95,273.8125 C185.675,303.35 157.15,338.0625 134.2125,365.975 " fill="none" id="CountryController-to-MatrixGraph" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="130,371.1,140.997,365.5658,133.9607,366.2652,133.2613,359.2288,130,371.1" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="35" x="178.125" y="329.3689">uses</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="193.2828" y="301.1499">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="25" x="109.5645" y="357.7757">1..*</text><!--MD5=[4e8c91b2f548ff8cdf9513825b59f611]
+link CountryController to Algorithms--><path codeLine="30" d="M408.5,273.8125 C486.65,307.5 580.4375,347.925 648.6125,377.3 " fill="none" id="CountryController-to-Algorithms" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="654.7125,379.9375,646.3757,370.8788,648.9771,377.454,642.402,380.0554,654.7125,379.9375" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="35" x="546.875" y="329.3689">uses</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="419.7539" y="301.1499">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="625.9387" y="366.1992">1</text><!--MD5=[68ea603bdb99991d3fc27bbc4b1e53cb]
+link CountryController to Port--><path codeLine="31" d="M261.875,273.8125 C261.875,306.075 261.875,344.525 261.875,373.525 " fill="none" id="CountryController-to-Port" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="261.875,379.9375,266.875,368.6875,261.875,373.6875,256.875,368.6875,261.875,379.9375" style="stroke:#A80036;stroke-width:1.25;"/><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="35" x="263.125" y="329.3689">uses</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="252.5098" y="301.1499">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="8.75" x="252.168" y="366.1992">1</text><!--MD5=[53d987a29e173c483615165bf0237abd]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+class KnowShortestPathUI {
+}
+
+class CountryController {
++landPath(String origem,String dest)
++seaPath(String origem, String dest)
++seaLandPath(String origem, String dest)
++throughDestination(String origem, String dest, ArrayList<String> paises)
+}
+
+class MatrixGraph {
++clone()
++removeVertex(V vert)
+}
+
+class Port {
++getPort()
+}
+
+class Algorithms {
++shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+}
+
+KnowShortestPathUI"1" ..>"1..*" CountryController
+CountryController "1" - -> "1..*" MatrixGraph : uses
+CountryController "1" - -> "1" Algorithms : uses
+CountryController "1" - -> "1" Port : uses
+
+
+@enduml
+
+@startuml
+
+
+
+class KnowShortestPathUI {
+}
+
+class CountryController {
++landPath(String origem,String dest)
++seaPath(String origem, String dest)
++seaLandPath(String origem, String dest)
++throughDestination(String origem, String dest, ArrayList<String> paises)
+}
+
+class MatrixGraph {
++clone()
++removeVertex(V vert)
+}
+
+class Port {
++getPort()
+}
+
+class Algorithms {
++shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+}
+
+KnowShortestPathUI"1" ..>"1..*" CountryController
+CountryController "1" - -> "1..*" MatrixGraph : uses
+CountryController "1" - -> "1" Algorithms : uses
+CountryController "1" - -> "1" Port : uses
+
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

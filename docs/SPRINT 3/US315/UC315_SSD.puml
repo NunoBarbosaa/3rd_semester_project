@@ -1,0 +1,13 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Staff" as PORTSTAFF
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTSTAFF
+
+PORTSTAFF -> SYSTEM : Check if a container is there or not
+
+SYSTEM --> PORTSTAFF: Informs operation success
+@enduml

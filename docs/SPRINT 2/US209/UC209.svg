@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143.75px" preserveAspectRatio="none" style="width:775px;height:143px;background:#FFFFFF;" version="1.1" viewBox="0 0 775 143" width="775px" zoomAndPan="magnify"><defs><filter height="300%" id="f1540czpsj0bmp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[f4cde1cbd61dee9d06b607becd6d3edc]
+entity Ship Captain--><ellipse cx="58.125" cy="28.125" fill="#FEFECE" filter="url(#f1540czpsj0bmp)" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.875;"/><path d="M58.125,38.125 L58.125,71.875 M41.875,48.125 L74.375,48.125 M58.125,71.875 L41.875,90.625 M58.125,71.875 L74.375,90.625 " fill="none" filter="url(#f1540czpsj0bmp)" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="101.25" x="7.5" y="115.6665">Ship Captain</text><ellipse cx="472.2431" cy="68.1986" fill="#FEFECE" filter="url(#f1540czpsj0bmp)" rx="288.4931" ry="60.6986" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="543.75" x="200.3681" y="72.8593">UC209 - Know the occupancy rate of a given ship at a given moment.</text><!--MD5=[b5497ab8752b964ea2c27e61dd0deffd]
+link Ship Captain to UC209 - Know the occupancy rate of a given ship at a given moment.--><path d="M109.0625,68.125 C128.0875,68.125 151.45,68.125 177.0375,68.125 " fill="none" id="Ship Captain-to-UC209 - Know the occupancy rate of a given ship at a given moment." style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="183.6,68.125,172.35,63.125,177.35,68.125,172.35,73.125,183.6,68.125" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[c3e3d1a494f9dfd1febbc8ee121d8f96]
+@startuml
+left to right direction
+:Ship Captain: - -> (UC209 - Know the occupancy rate of a given ship at a given moment.)
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

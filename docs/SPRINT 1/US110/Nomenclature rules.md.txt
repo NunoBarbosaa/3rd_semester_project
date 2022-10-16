@@ -1,0 +1,55 @@
+Inside this document its presented some nomenclature rules.
+
+Every restriction follows this form:
+
+-Constraint restrictionName Restriction type reference
+
+Certain restriction types used are:
+1) NOT NULL - this column can´t have null values
+2) UNIQUE - every element on that column is unique, not repeated 
+3) PRIMARY KEY - defines as the primary key, either simple or composed.
+4) FOREIGN KEY - defines as the foreign key, either simple or composed.
+4) REFERENCES- defines from which table a certain column is referred.
+
+Names given for the restrictions:
+2) un_ for UNIQUE fields
+3) pk_ for PRIMARY KEY
+4) fk_ for FOREIGN KEY
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Creating tables:
+	CREATE TABLE student (
+studentId int,
+name varchar(255);
+age int,
+CONSTRAINT pk_student PRIMARY KEY (studentId)
+);
+
+In this example, we are creating a table of students, that has studentId, name, age as columns. studentId is then defined as the primary key.
+This primary key is simple.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE student (
+studentId int,
+school_year int,
+class double CONSTRAINT un_Class UNIQUE,
+name varchar(255);
+age int not null,
+CONSTRAINT pk_student PRIMARY KEY (studentId, school_year)
+);
+
+In this example, we are creating a table of students, that has studentId,school_year, name, age as columns. studentId grouped with school_year is then defined as the primary key.
+This primary key is composed.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTES:
+	- When attributed to a column the PRIMARY KEY, that column is assumed as UNIQUE and NOT NULL
+	- When naming a column with more then 1 word, we space them with an underscore (school_year)
+	- When defining a column unique, it is used CONSTRAINT un_NameofColumn (un_ is the key identifier)
+	- When defining a column not null, it is used not null after the definition of the column
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

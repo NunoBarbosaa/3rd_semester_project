@@ -1,0 +1,15 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Manager" as PORTMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTMANAGER
+
+PORTMANAGER -> SYSTEM : Intend to generate, a week in advance, the loading and unloading map based on ships and trucks load manifests and corresponding travel plans, to anticipate the level of sufficient and necessary resources
+
+
+
+SYSTEM --> PORTMANAGER: Informs operation success
+@enduml

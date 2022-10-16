@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class Client {
+}
+
+
+class Containers {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+class ContainerStore {
+}
+
+Containers "1" -> "1..*"Client :> has
+ContainerStore "1" -> "1..*"Containers :> knows
+@enduml

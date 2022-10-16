@@ -1,0 +1,20 @@
+
+
+create or replace function fnc_OccupancyByCargo( cg cargoManifest.cargoManifestId%type)
+return SYS_REFCURSOR
+is 
+rc SYS_REFCURSOR;
+begin 
+ open rc for
+        select 
+            MMSI, 
+            ship_capacity, 
+            trunc(
+            (
+                select (count(1) * 40.918)/ship_capacity*100
+                from container_cargo
+                where cargoManifestId = cg
+            ),1) as occupancyRate
+        from ship;
+return rc;
+end;

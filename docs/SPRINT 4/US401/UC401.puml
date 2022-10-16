@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Traffic manager: --> (UC401 - Know which ports are more critical in this freight network)
+@enduml

@@ -1,0 +1,89 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class KnowPortsUI{
+}
+
+class KnowShortestPathUI {
+}
+
+class CountryController {
++ getCentrality(int numberOfPorts)
++landPath(String origem,String dest)
++seaPath(String origem, String dest)
++seaLandPath(String origem, String dest)
++throughDestination(String origem, String dest, ArrayList<String> paises)
+
+}
+
+class MatrixGraph {
++ clone()
++ removeVertex(V vert)
++ adjVertices(V vert)
+}
+
+class Algorithms {
++ minDistGraph(Graph <V,E> g, Comparator<E> ce, BinaryOperator<E> sum)
++ shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+}
+
+class Port {
++getPort()
+}
+
+
+
+CountryController <.up. KnowPortsUI
+CountryController <.up. KnowShortestPathUI
+CountryController "1" --> "1..*" MatrixGraph : uses
+CountryController "1" --> "1..*" Algorithms : uses
+CountryController "1" --> "1" Port : uses
+
+class ShipOccupancyUI{
+}
+
+class ShipOccupancyController {
++ averageOccupancyRate(int mmsi)
++ tripsBelowThreshHold(int mmsi)
++ getLoadingMap()
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class CargoManifestStore {
++ averageOccupancyRate(DatabaseConnection databaseConnection, int mmsi, String startDate)
++ getTripsThreshHold(DatabaseConnection databaseConnection, int mmsi, String startDate )
++ getLoadingMap(DatabaseConnection databaseConnection)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+class ShipTripUI{
+}
+
+class LoadingMapUI{
+}
+
+
+
+ShipOccupancyController <.up. LoadingMapUI
+ShipOccupancyController <.up. ShipOccupancyUI
+ShipOccupancyController <.up. ShipTripUI
+ShipOccupancyController "1" --> "1..*" ConnectionFactory : uses
+ShipOccupancyController "1" --> "1" CargoManifestStore : uses
+CargoManifestStore "1" --> "1..*" DatabaseConnection : uses
+
+
+
+
+
+
+
+
+@enduml
+

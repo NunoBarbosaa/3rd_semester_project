@@ -1,0 +1,19 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Manager" as PORTMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTMANAGER
+
+PORTMANAGER -> SYSTEM : Needs to import ports from a text file and create a 2D-tree with port locations
+
+SYSTEM -> PORTMANAGER: Asks for the file path and the port locations
+
+PORTMANAGER -> SYSTEM : Inserts the file path with the locations
+
+SYSTEM --> PORTMANAGER : Informs operation success
+
+
+@enduml

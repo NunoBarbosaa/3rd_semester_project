@@ -1,0 +1,17 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Fleet Manager" as FLEETMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate FLEETMANAGER
+
+FLEETMANAGER -> SYSTEM : Want to know the average occupancy rate per manifest of a given ship during a given period
+
+SYSTEM --> FLEETMANAGER : Asks for the ship mmsi and the departure/arrival dates
+
+FLEETMANAGER -> SYSTEM : Inserts the data
+
+SYSTEM --> FLEETMANAGER: Informs operation success
+@enduml

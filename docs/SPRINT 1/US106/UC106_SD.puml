@@ -1,0 +1,49 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "GetTopNShipsByMostKmFastShipsUI" as UI
+participant ":ShipDistanceController" as CTRL
+participant ":ShipDistance" as ship
+
+TRAFFICMANAGER -> UI: Wants the top ships
+activate UI
+deactivate UI
+
+UI --> TRAFFICMANAGER: Asks for the initial and final date time and the number of ships who wants to see
+activate UI
+deactivate UI
+
+
+TRAFFICMANAGER -> UI: Inserts the data
+
+
+UI -> CTRL: shipsOrderByMostKmFastShips (String dateOfCheck, String hourCheck,String dateOfCheck2, String hourCheck2, int numberOfResults, HashMap<Ship,List<ShipDynamicFields>> shipMap)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship: mostKmFastShips(String dateOfCheck, String hourCheck,String dateOfCheck2, String hourCheck2, int numberOfResults, HashMap<Ship,List<ShipDynamicFields>> shipMap)
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+ship -> ship: compare(ShipDistance p1, ShipDistance p2)
+activate ship
+deactivate ship
+
+ship -> CTRL: return shipsFinal
+activate ship
+deactivate ship
+activate CTRL
+deactivate CTRL
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+activate UI
+deactivate UI
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class AuditTrailUI{
+}
+
+class AuditTrailController {
++ getAuditTrail()
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class CargoManifestStore {
++ getAuditTrail(DatabaseConnection databaseConnection)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+AuditTrailController <.up. AuditTrailUI
+AuditTrailController "1" --> "1..*" ConnectionFactory : uses
+AuditTrailController "1" --> "1" CargoManifestStore : uses
+CargoManifestStore "1" --> "1..*" DatabaseConnection : uses
+
+
+
+@enduml

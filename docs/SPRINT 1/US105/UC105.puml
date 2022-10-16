@@ -1,0 +1,7 @@
+
+
+@startuml
+
+left to right direction
+:Traffic manager: --> (UC105 - List for all ships the MMSI, the total number of movements, Travelled Distance and Delta Distance)
+@enduml

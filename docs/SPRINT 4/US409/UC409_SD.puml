@@ -1,0 +1,18 @@
+@startuml
+autonumber
+'hide footbox
+actor "Port Staff" as PORTSTAFF
+
+participant "main.c" as main
+
+
+
+PORTSTAFF -> main: Fill a dynamically reserved array in memory with all the container's information in its respective place
+activate main
+deactivate main
+
+
+main --> PORTSTAFF: Informs operation success
+activate main
+deactivate main
+@enduml

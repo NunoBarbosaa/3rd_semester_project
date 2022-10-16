@@ -1,0 +1,38 @@
+@startuml
+
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+class Containers {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+
+
+
+
+PortStaff"1" -down- "1..*"Ship : > works
+Ship "1" -down- "1..*"Containers  : > has
+
+@enduml

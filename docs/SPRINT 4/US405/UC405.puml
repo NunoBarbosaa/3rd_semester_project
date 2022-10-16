@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Fleet manager: --> (UC405 - know the average occupancy rate per manifest of a given ship during a given period)
+@enduml

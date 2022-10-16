@@ -1,0 +1,14 @@
+@startuml
+
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : know which ports are more critical (have greater centrality) in this freight network
+
+SYSTEM --> TRAFFICMANAGER: Informs operation success
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+left to right direction
+:Client: --> (UC204 - Know the current situation of a specific container being used to transport my goods.)
+
+@enduml

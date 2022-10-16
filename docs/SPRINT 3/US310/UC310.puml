@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Port Manager: --> (UC310 - Intend to have a map of the occupation of the existing resources in the port during a given month)
+@enduml

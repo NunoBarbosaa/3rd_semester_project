@@ -1,0 +1,176 @@
+@startuml
+
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":KnowShortestPathUI" as UI
+participant ":CountryController" as CTRL
+participant ":MatrixGraph" as GRAPH
+participant ":Port" as port
+participant ":Algorithms" as alg
+
+TRAFFICMANAGER -> UI : Know the shortest path between two locals
+activate UI
+deactivate UI
+UI --> TRAFFICMANAGER: Asks for the initial and final port
+activate UI
+deactivate UI
+TRAFFICMANAGER -> UI: Inserts the data
+activate UI
+deactivate UI
+
+UI -> CTRL: landPath(String origem,String dest)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH: clone()
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+GRAPH -->  CTRL: return g
+activate GRAPH
+deactivate GRAPH
+activate CTRL
+deactivate CTRL
+
+CTRL -> port: getPort()
+activate CTRL
+deactivate CTRL
+activate port
+deactivate port
+
+port --> CTRL: return port
+activate port
+deactivate port
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH: removeVertex(V vert)
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+GRAPH --> CTRL: return true
+activate GRAPH
+deactivate GRAPH
+activate CTRL
+deactivate CTRL
+
+CTRL -> alg: shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+activate CTRL
+deactivate CTRL
+activate alg
+deactivate alg
+
+alg --> CTRL: return lengthPath
+activate alg
+deactivate alg
+activate CTRL
+deactivate CTRL
+
+CTRL--> UI: return path
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI -> CTRL: seaPath(String origem, String dest)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> alg: shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+activate CTRL
+deactivate CTRL
+activate alg
+deactivate alg
+
+alg --> CTRL: return lengthPath
+activate alg
+deactivate alg
+activate CTRL
+deactivate CTRL
+
+CTRL--> UI: return path
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI -> CTRL:seaLandPath(String origem, String dest)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> alg: shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+activate CTRL
+deactivate CTRL
+activate alg
+deactivate alg
+
+alg --> CTRL: return lengthPath
+activate alg
+deactivate alg
+activate CTRL
+deactivate CTRL
+
+CTRL--> UI: return path
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI -> CTRL: throughDestination(String origem, String dest, ArrayList<String> paises)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+
+CTRL -> alg: shortestPath(Graph<V, E> g, V vOrig, V vDest, Comparator<E> ce, BinaryOperator<E> sum, E zero, LinkedList<V> shortPath)
+activate CTRL
+deactivate CTRL
+activate alg
+deactivate alg
+
+alg --> CTRL: return lengthPath
+activate alg
+deactivate alg
+activate CTRL
+deactivate CTRL
+
+CTRL--> UI: return pathF
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UI --> TRAFFICMANAGER: Informs operation success
+
+
+
+
+@enduml

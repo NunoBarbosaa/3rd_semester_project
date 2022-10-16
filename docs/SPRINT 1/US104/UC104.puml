@@ -1,0 +1,5 @@
+@startuml
+
+left to right direction
+:Traffic manager: --> (UC104 - Make a summary of a ship´s movement)
+@enduml

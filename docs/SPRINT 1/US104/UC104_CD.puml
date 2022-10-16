@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class SummaryUI {
+}
+
+class ShipDistanceController {
++ shipDistCalc(int mmsi, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+}
+
+class ShipDistance {
++setMmsi (mmsi)
++setTotalMovements(ShipDistance.getTotalMovements(mmsi, shipMap))
++setTotalTime(ShipDistance.getTotalTime(mmsi, shipMap))
++setMaxCog(ShipDistance.maxCog(mmsi, shipMap))
++setMaxSog(ShipDistance.maxSog(mmsi, shipMap))
++setStartTime(ShipDistance.minTime(mmsi, shipMap).getDateTime())
++setEndTime(ShipDistance.maxTime(mmsi, shipMap).getDateTime())
++setDepLatitude(ShipDistance.minTime(mmsi, shipMap).getLat())
++setDepLong(ShipDistance.minTime(mmsi, shipMap).getLon())
++setArrLatitude(ShipDistance.maxTime(mmsi, shipMap).getLat())
++setArrLong(ShipDistance.maxTime(mmsi, shipMap).getLon())
++setMeanCog(ShipDistance.meanCog(mmsi, shipMap))
++setMeanSog(ShipDistance.meanSog(mmsi, shipMap))
++setDeltDis(ShipDistance.distDelta(mmsi, shipMap))
++setTravDis(ShipDistance.totalDistance(mmsi, shipMap))
++setVesselName(ship1.getVesselName()
+}
+
+SummaryUI ..> ShipDistanceController
+ShipDistanceController -down- ShipDistance :> uses
+@enduml

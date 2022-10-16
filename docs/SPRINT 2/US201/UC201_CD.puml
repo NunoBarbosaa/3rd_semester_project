@@ -1,0 +1,38 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class ImportPortUI{
+}
+
+class LoaderController{
++ loadPortsTwoDTree(String fileName)
+}
+
+class Port{
++ Port(String continent, String country, int code, String port, Double lat, Double lon)
++ getLon()
++ getLat()
+}
+
+class TwoDTree{
++ insert(Port element)
+}
+
+class Node {
++ Node(Port info)
++getInfo()
++setLeft()
++setRight()
+}
+
+
+
+
+LoaderController <.up. ImportPortUI
+LoaderController "1" --> "1..*" Port : uses
+LoaderController "1" --> "1" TwoDTree : uses
+TwoDTree "1" --> "1..*" Port : uses
+TwoDTree "1" --> "1..*" Node : uses
+
+@enduml

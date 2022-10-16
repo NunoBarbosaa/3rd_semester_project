@@ -1,0 +1,4 @@
+@startuml
+left to right direction
+:Traffic manager: --> (UC301 - Import data from countries, ports, borders and seadists from the database to build a freight network.)
+@enduml

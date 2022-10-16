@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+:Traffic manager: --> (UC301 - Import data from countries, ports, borders and seadists from the database to build a freight network.)
+:Traffic manager: --> (UC302 - Colour the map using as few colours as possible)
+:Traffic manager: --> (UC303 - Know which places are closest to all other places)
+:Ship Captain: --> (UC304 - Have access to audit trails for a given container of a given cargo manifest)
+:Port Manager: --> (UC306 -  Know the occupancy rate of each warehouse and an estimate of the containers leaving the warehouse during the next 30 days)
+:Port Manager: --> (UC310 - Intend to have a map of the occupation of the existing resources in the port during a given month)
+:Client: --> (UC312 - Know the current situation of a specific container being used to transport my goods)
+:Port Staff: --> (UC313 - Fill a statically reserved matrix in memory with each container's ID in its respective place)
+:Port Staff: --> (UC314 - Know the total number of free/occupied slots in the transport vehicle)
+:Port Staff: --> (UC315 - Know if a container is there or not)
+:Port Staff: --> (UC316 - Know the total number of occupied slots)
+:Ship Chief Electrical Engineer: --> (UC317 - Know what set of materials to use in a container, to operate at temperatures of 7°C)
+:Ship Chief Electrical Engineer: --> (UC318 - Know what set of materials to use in a container, to operate at temperatures of -5 °C)
+:Ship Chief Electrical Engineer: --> (UC319 - Know the thermal resistance, for each operating temperature, of each container that must contain at least three different materials in its walls)
+:Ship Chief Electrical Engineer: --> (UC320 - Intend to present in a summary document, the choice of materials considered for the two types of containers considered, and their thermal resistances)
+@enduml

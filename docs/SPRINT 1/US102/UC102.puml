@@ -1,0 +1,8 @@
+@startuml
+
+left to right direction
+
+
+
+:Traffic manager: --> (UC102 - Search the details of a ship using any of its codes: MMSI, IMO or  Call Sign)
+@enduml

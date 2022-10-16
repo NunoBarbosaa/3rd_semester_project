@@ -1,0 +1,18 @@
+@startuml
+
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate TRAFFICMANAGER
+
+TRAFFICMANAGER -> SYSTEM : Know the shortest path between two locals
+
+SYSTEM --> TRAFFICMANAGER: Asks for the initial and final port
+
+TRAFFICMANAGER -> SYSTEM: Inserts the data
+
+SYSTEM --> TRAFFICMANAGER: Informs operation success
+@enduml

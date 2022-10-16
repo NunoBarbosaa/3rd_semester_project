@@ -1,0 +1,16 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class position.c{
+}
+
+class position.s {
++ int verifyContainer(short x,short y,short z,int containers[8][8][8])
+}
+
+position.s <.up. position.c
+
+@enduml
+
+
+

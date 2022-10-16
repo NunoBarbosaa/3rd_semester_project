@@ -1,0 +1,42 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class FindShipUI{
+}
+
+class FindShipController{
++ findShipByMmsi(AVL avl, int mmsi)
++ findShipByIMO(AVL avl, String imo)
++ findShipByCallSign(AVL avl, String callSign)
+}
+
+class Ship{
++ findShip(AVL avl, int mmsi)
+}
+
+class AVL{
++ isEmpty()
++ preOrder()
+}
+
+class ShipOrderedByIMO{
++ findShipByIMO(AVL avl , String imo)
+}
+
+class ShipOrderedByCallSign{
++ findShipByCallSign(AVL avl , String callSign)
+}
+
+
+FindShipController <.up. FindShipUI
+FindShipController "1" --> "1..*" Ship : uses
+FindShipController "1" --> "1..*" ShipOrderedByIMO : uses
+FindShipController "1" --> "1" ShipOrderedByCallSign : uses
+Ship "1" --> "1" AVL : uses
+ShipOrderedByIMO "1" --> "1" AVL : uses
+ShipOrderedByCallSign "1" --> "1" AVL : uses
+
+
+
+@enduml

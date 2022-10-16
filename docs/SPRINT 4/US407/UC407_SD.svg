@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1050px" preserveAspectRatio="none" style="width:1738px;height:1050px;background:#FFFFFF;" version="1.1" viewBox="0 0 1738 1050" width="1738.75px" zoomAndPan="magnify"><defs><filter height="300%" id="f19sb8tbs5fld7" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="152.4512"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="982.2852"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="454.209"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="454.209"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1623.75" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1623.75" y="755.9668"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="63.75" x2="63.75" y1="112.0117" y2="1042.2852"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="765" x2="765" y1="112.0117" y2="1042.2852"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="961.25" x2="961.25" y1="112.0117" y2="1042.2852"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1199.375" x2="1199.375" y1="112.0117" y2="1042.2852"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1428.125" x2="1428.125" y1="112.0117" y2="1042.2852"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1629.375" x2="1629.375" y1="112.0117" y2="1042.2852"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="107.5" x="6.25" y="108.1665">Port Manager</text><ellipse cx="63.75" cy="18.75" fill="#FEFECE" filter="url(#f19sb8tbs5fld7)" rx="10" ry="10" style="stroke:#A80036;stroke-width:2.5;"/><path d="M63.75,28.75 L63.75,62.5 M47.5,38.75 L80,38.75 M63.75,62.5 L47.5,81.25 M63.75,62.5 L80,81.25 " fill="none" filter="url(#f19sb8tbs5fld7)" style="stroke:#A80036;stroke-width:2.5;"/><rect fill="#FEFECE" filter="url(#f19sb8tbs5fld7)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="135" x="695" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="117.5" x="703.75" y="93.1665">:LoadingMapUI</text><rect fill="#FEFECE" filter="url(#f19sb8tbs5fld7)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="223.75" x="847.5" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="206.25" x="856.25" y="93.1665">:ShipOccupancyController</text><rect fill="#FEFECE" filter="url(#f19sb8tbs5fld7)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="172.5" x="1110.625" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="155" x="1119.375" y="93.1665">:ConnectionFactory</text><rect fill="#FEFECE" filter="url(#f19sb8tbs5fld7)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="180" x="1335.625" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="162.5" x="1344.375" y="93.1665">:CargoManifestStore</text><rect fill="#FEFECE" filter="url(#f19sb8tbs5fld7)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="188.75" x="1533.125" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="171.25" x="1541.875" y="93.1665">:DatabaseConnection</text><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="152.4512"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="758.75" y="982.2852"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="454.209"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="955.625" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="454.209"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1193.125" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1421.875" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1623.75" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f19sb8tbs5fld7)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1623.75" y="755.9668"/><polygon fill="#A80036" points="743.75,147.4512,756.25,152.4512,743.75,157.4512,748.75,152.4512" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="63.75" x2="751.25" y1="152.4512" y2="152.4512"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="72.5" y="146.3806">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="657.5" x="86.25" y="146.3806">Want to know the average occupancy rate per manifest of a given ship during a given period</text><polygon fill="#A80036" points="940.625,222.8906,953.125,227.8906,940.625,232.8906,945.625,227.8906" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="771.25" x2="948.125" y1="227.8906" y2="227.8906"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="780" y="221.8201">2</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="120" x="793.75" y="221.8201">getLoadingMap()</text><polygon fill="#A80036" points="1178.125,298.3301,1190.625,303.3301,1178.125,308.3301,1183.125,303.3301" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="968.125" x2="1185.625" y1="303.3301" y2="303.3301"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="976.875" y="297.2595">3</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="93.75" x="990.625" y="297.2595">getInstance()</text><polygon fill="#A80036" points="981.875,373.7695,969.375,378.7695,981.875,383.7695,976.875,378.7695" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="974.375" x2="1191.875" y1="378.7695" y2="378.7695"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="989.375" y="372.699">4</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="107.5" x="1003.125" y="372.699">return instance</text><polygon fill="#A80036" points="1178.125,449.209,1190.625,454.209,1178.125,459.209,1183.125,454.209" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="968.125" x2="1185.625" y1="454.209" y2="454.209"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="976.875" y="448.1384">5</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="182.5" x="990.625" y="448.1384">getDatabaseConnection()</text><polygon fill="#A80036" points="981.875,524.6484,969.375,529.6484,981.875,534.6484,976.875,529.6484" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="974.375" x2="1191.875" y1="529.6484" y2="529.6484"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="989.375" y="523.5779">6</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="193.75" x="1003.125" y="523.5779">return databaseConnection</text><polygon fill="#A80036" points="1406.875,600.0879,1419.375,605.0879,1406.875,610.0879,1411.875,605.0879" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="968.125" x2="1414.375" y1="605.0879" y2="605.0879"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="976.875" y="599.0173">7</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="422.5" x="990.625" y="599.0173">getLoadingMap(DatabaseConnection databaseConnection)</text><polygon fill="#A80036" points="1608.75,675.5273,1621.25,680.5273,1608.75,685.5273,1613.75,680.5273" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="1434.375" x2="1616.25" y1="680.5273" y2="680.5273"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="1443.125" y="674.4568">8</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="113.75" x="1456.875" y="674.4568">getConnection()</text><polygon fill="#A80036" points="1448.125,750.9668,1435.625,755.9668,1448.125,760.9668,1443.125,755.9668" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="1440.625" x2="1622.5" y1="755.9668" y2="755.9668"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="1455.625" y="749.8962">9</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="125" x="1469.375" y="749.8962">return connection</text><polygon fill="#A80036" points="981.875,826.4063,969.375,831.4063,981.875,836.4063,976.875,831.4063" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="974.375" x2="1420.625" y1="831.4063" y2="831.4063"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="989.375" y="825.3357">10</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="86.25" x="1011.875" y="825.3357">return result</text><polygon fill="#A80036" points="785,901.8457,772.5,906.8457,785,911.8457,780,906.8457" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="777.5" x2="954.375" y1="906.8457" y2="906.8457"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="792.5" y="900.7751">11</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="86.25" x="815" y="900.7751">return result</text><polygon fill="#A80036" points="77.5,977.2852,65,982.2852,77.5,987.2852,72.5,982.2852" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="70" x2="757.5" y1="982.2852" y2="982.2852"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="85" y="976.2146">12</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="190" x="107.5" y="976.2146">Informs operation success</text><!--MD5=[a598522152e8870ed4e5523bb79a1618]
+@startuml
+autonumber
+hide footbox
+
+actor "Port Manager" as PORTMANAGER
+participant ":LoadingMapUI" as UI
+participant ":ShipOccupancyController" as CTRL
+participant ":ConnectionFactory" as cf
+participant ":CargoManifestStore" as cs
+participant ":DatabaseConnection" as dc
+
+
+PORTMANAGER -> UI : Want to know the average occupancy rate per manifest of a given ship during a given period
+activate UI
+deactivate UI
+
+
+
+UI -> CTRL: getLoadingMap()
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getInstance()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf - -> CTRL: return instance
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getDatabaseConnection()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf - -> CTRL: return databaseConnection
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+
+CTRL -> cs: getLoadingMap(DatabaseConnection databaseConnection)
+activate CTRL
+deactivate CTRL
+activate cs
+deactivate cs
+
+cs -> dc: getConnection()
+activate cs
+deactivate cs
+activate dc
+deactivate dc
+
+dc - -> cs: return connection
+activate dc
+deactivate dc
+activate cs
+deactivate cs
+
+
+cs - -> CTRL: return result
+activate cs
+deactivate cs
+activate CTRL
+deactivate CTRL
+
+CTRL - -> UI: return result
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+UI - -> PORTMANAGER: Informs operation success
+activate UI
+deactivate UI
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class ShipCaptain {
+}
+
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+class ShipDynamicFields {
+ - dateTime
+ - long
+ -lat
+ -sog
+ -cog
+ -heading
+ -position
+ -transceiverClass
+ }
+
+ShipCaptain "1" -> "1..*"Ship :> manages
+Ship"1" -> "1..*"ShipDynamicFields :> has
+
+
+@enduml

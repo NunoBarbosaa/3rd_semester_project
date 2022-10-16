@@ -1,0 +1,194 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "ShipRouteUI" as UI
+participant ":ShipRouteController" as CTRL
+participant ":ShipRoute" as ship
+participant ":ShipMovement" as shipMov
+participant ":ShipPair" as shipPair
+
+TRAFFICMANAGER -> UI:Asks for pairs of ships
+activate UI
+deactivate UI
+
+UI -> CTRL: loadCsvFile(final String filePath)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> UI: return shipMovementList
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI -> CTRL: calculateShipRoute(List<ShipMovement> shipMovementList)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship: calculateShipRouteDetails(List<ShipMovement> shipMovementList)
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+ship -> shipMov: getBaseDateTime()
+activate ship
+deactivate ship
+activate shipMov
+deactivate shipMov
+
+
+ship -> shipMov: getLat()
+activate ship
+deactivate ship
+activate shipMov
+deactivate shipMov
+
+ship -> shipMov: getLon()
+activate ship
+deactivate ship
+activate shipMov
+deactivate shipMov
+
+ship -> CTRL: return shipRoute
+activate ship
+deactivate ship
+activate CTRL
+deactivate CTRL
+
+CTRL -> UI: return shipRouteList
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI -> CTRL: filterShipRoutesByTravelDistance(List<ShipRoute> shipRouteList, int minTravelDistance)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship: getTravelDistance()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> UI: return filteredShipRoutes
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+
+UI -> CTRL: filterShipRoutesByPairs(List<ShipRoute> shipRouteList, int minDistanceDifference)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship: distance(double lat1, double lat2, double lon1, double lon2)
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> ship: getMmsi()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> ship: getDepartureLat()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> ship: getDepartureLong()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> ship: getArrivalLat()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> ship: getArrivalLong()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> ship: getTravelDistance()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL -> shipPair: setMmsi1(getMmsi())
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+CTRL -> shipPair: setMmsi2(getMmsi())
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+CTRL -> shipPair: setTravelDistance1(getTravelDistance())
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+CTRL -> shipPair: setTravelDistance2(getTravelDistance())
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+CTRL -> shipPair: setArrivalDistance(arrivalDistance)
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+CTRL -> shipPair: setDepartureDistance(departureDistance)
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+CTRL -> shipPair: order(List<ShipPair> shipPairList)
+activate CTRL
+deactivate CTRL
+activate shipPair
+deactivate shipPair
+
+shipPair -> shipPair: compare(Object o1, Object o2)
+activate shipPair
+deactivate shipPair
+
+CTRL -> UI: return shipPairList
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI --> TRAFFICMANAGER: Informs operation success
+activate UI
+deactivate UI
+
+@enduml

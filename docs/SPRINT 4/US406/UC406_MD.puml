@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+class ShipRoute {
+- mmsi
+- departureLat
+- arrivalLat
+- departureLong
+- arrivalLong
+- travelDistance
+}
+
+class ShipPair {
+- mmsi1
+- mmsi2
+- departureDistance
+- arrivalDistance
+- travelDistance1
+}
+
+class ShipDistance {
+- mmsi
+- vesselName
+- startTime
+- endTime
+- totalMovements
+- totalTime
+- maxSog
+- meanSog
+- maxCog
+- meanCog
+- depLatitude
+- arrLatitude
+- depLong
+- arrLong
+- travDist
+- deltDist
+}
+
+
+
+
+
+FleetManager"1" -right- "1..*"Ship : > controls
+Ship "1" -down- "1..*"ShipDistance :> has
+Ship "1" -up- "1..*"ShipRoute :> has
+Ship "1" -right- "1..*"ShipPair :> has
+
+
+@enduml

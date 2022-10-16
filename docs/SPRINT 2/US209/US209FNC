@@ -1,0 +1,25 @@
+
+create or replace function fnc_OccupancyAtMoment( shMMSI ship.MMSI%type,dateTimeStamp container_cargo.arrivalDate%type)
+return SYS_REFCURSOR
+is 
+rc SYS_REFCURSOR;
+begin 
+    open rc for
+        select MMSI,ship_capacity,
+        trunc(
+            (
+                select (count(*)*40.918)/ship_capacity*100
+                from container_cargo
+                where cargoManifestId = (
+                    select cargoManifestId 
+                    from cargoManifest c 
+                    where (
+                        MMSI =  shMMSI AND dateTimeStamp > c.departureDate AND dateTimeStamp < c.arrivalDate
+                    )
+                ) 
+            ), 1
+        ) as occupancyRate
+        from ship;
+return rc;
+end;
+/

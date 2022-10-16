@@ -1,0 +1,32 @@
+
+@startuml
+skinparam classAttributeIconSize 0
+
+class FindContainerUI{
+}
+
+class FindContainerController {
++ findContainer(int containerId)
+}
+
+class ConnectionFactory {
++ getInstance()
++ getDatabaseConnection()
+}
+
+class ContainerStore {
++ getContainerInfo(DatabaseConnection databaseConnection, int containerNumber)
+}
+
+class DatabaseConnection {
++ getConnection()
+}
+
+FindContainerController <.up. FindContainerUI
+FindContainerController "1" --> "1..*" ConnectionFactory : uses
+FindContainerController "1" --> "1" ContainerStore : uses
+ContainerStore "1" --> "1..*" DatabaseConnection : uses
+
+
+
+@enduml

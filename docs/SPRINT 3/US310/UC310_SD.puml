@@ -1,0 +1,83 @@
+@startuml
+
+autonumber
+'hide footbox
+actor "Port Manager" as PORTMANAGER
+participant ":AuditTrailUI" as UI
+participant ":AuditTrailController" as CTRL
+participant ":ConnectionFactory" as cf
+participant ":CargoManifestStore" as cs
+participant ":DatabaseConnection" as dc
+
+
+PORTMANAGER -> UI : Have a map of the occupation of the existing resources in the port during a given month
+activate UI
+deactivate UI
+
+UI -> CTRL: getAuditTrail()
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getInstance()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf --> CTRL: return instance
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+CTRL -> cf: getDatabaseConnection()
+activate CTRL
+deactivate CTRL
+activate cf
+deactivate cf
+
+cf --> CTRL: return databaseConnection
+activate cf
+deactivate cf
+activate CTRL
+deactivate CTRL
+
+
+CTRL -> cs: getAuditTrail(DatabaseConnection databaseConnection)
+activate CTRL
+deactivate CTRL
+activate cs
+deactivate cs
+
+cs -> dc: getConnection()
+activate cs
+deactivate cs
+activate dc
+deactivate dc
+
+dc --> cs: return connection
+activate dc
+deactivate dc
+activate cs
+deactivate cs
+
+
+cs --> CTRL: return result
+activate cs
+deactivate cs
+activate CTRL
+deactivate CTRL
+
+CTRL --> UI: return result
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+UI--> PORTMANAGER: Informs operation success
+activate UI
+deactivate UI
+
+@enduml

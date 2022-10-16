@@ -1,0 +1,7 @@
+@startuml
+
+left to right direction
+
+
+:Traffic manager: --> (UC106 - Get the top-N ships with the most kilometres travelled and their average speed)
+@enduml

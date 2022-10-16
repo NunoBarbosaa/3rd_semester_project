@@ -1,0 +1,15 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Staff" as PORTSTAFF
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTSTAFF
+
+PORTSTAFF -> SYSTEM : Fill a dynamically reserved array in memory with all the container's information in its respective place
+
+
+
+SYSTEM --> PORTSTAFF: Informs operation success
+@enduml

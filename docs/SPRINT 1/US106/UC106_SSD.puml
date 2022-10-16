@@ -1,0 +1,16 @@
+@startuml
+autonumber
+hide footbox
+activate SYSTEM
+actor "Traffic Manager?" as TRAFFICMANAGER
+participant ":System" as SYSTEM
+activate TRAFFICMANAGER
+TRAFFICMANAGER -> SYSTEM : Wants the top ships
+SYSTEM --> TRAFFICMANAGER : Asks for the initial and final date time and the number of ships who wants to see
+
+TRAFFICMANAGER -> SYSTEM : Inserts the data
+
+SYSTEM --> TRAFFICMANAGER : Informs operation success
+deactivate SYSTEM
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+left to right direction
+
+:Traffic Manager: --> (UC202 -  Find the closest port of a ship given its CallSign,  on a certain DateTime.)
+
+
+@enduml

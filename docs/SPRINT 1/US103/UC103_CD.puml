@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class PositionsUI{
+}
+
+class ShipPositionsController{
++ checkPositions(String dateOfCheck, String hourCheck, HashMap<Ship, List<ShipDynamicFields>> shipMap)
++checkPositionsBetweenDates(String dateOfCheck, String hourCheck, String DateOfCheck2, String hourCheck2, HashMap<Ship, List<ShipDynamicFields>> shipMap)
+}
+
+
+class ShipDynamicFields{
++checkLastPosition(int mmsi, int hour, int minutes, HashMap<Ship, List<ShipDynamicFields>> shipMap)
++new ShipDynamicFields(ship.getMmsi(), diaAno + hora, din.getLat(),din.getLon(), din.getSog(), din.getCog(), din.getHeading(), din.getTransceiverClass());
++ getLat()
++ getLon()
++ getSog()
++ getCog()
++ getHeading()
++ getTransceiverClass()
+}
+
+class AVL{
++ insert(E element)
+}
+
+ class Ship{
++ getMsi()
+}
+PositionsUI ..> ShipPositionsController
+ShipPositionsController -> ShipDynamicFields :> uses
+ShipPositionsController -left- AVL :> uses
+ShipPositionsController -right- Ship :> uses
+@enduml

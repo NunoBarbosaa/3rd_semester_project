@@ -1,0 +1,13 @@
+@startuml
+autonumber
+hide footbox
+
+actor "Port Manager" as PORTMANAGER
+participant ":System" as SYSTEM
+activate SYSTEM
+activate PORTMANAGER
+
+PORTMANAGER -> SYSTEM : Have a map of the occupation of the existing resources in the port during a given month
+
+SYSTEM --> PORTMANAGER: Informs operation success
+@enduml

@@ -1,0 +1,47 @@
+
+create or replace function fnc_ContainerInfo( ctNumber ship_container.containerNumber%type)
+return SYS_REFCURSOR
+is 
+rc SYS_REFCURSOR;
+begin 
+    open rc for
+    SELECT
+    CASE
+        WHEN q1.container_position = 'in_arrival_port' OR q1.container_position = 'in_departure_port' THEN 'PORT'
+        ELSE 'SHIP'
+    END AS position_type,
+    CASE
+        WHEN q1.container_position = 'in_arrival_port' 
+        THEN ( 
+            SELECT sp.port_name FROM container_cargo cc
+            INNER JOIN ship_PORT sp ON (sp.identification = cc.arrivalportId)
+            WHERE cc.containerNumber = ctNumber
+        )
+        WHEN container_position = 'in_departure_port'
+        THEN ( 
+            SELECT sp.port_name FROM container_cargo cc
+            INNER JOIN ship_PORT sp ON (sp.identification = cc.departureportId)
+            WHERE cc.containerNumber = ctNumber
+        )
+        ELSE ( 
+            SELECT sh.ship_name FROM container_cargo cc
+            INNER JOIN ship_PORT sp ON (sp.identification = cc.departureportId)
+            INNER JOIN CARGOMANIFEST cm ON (cc.cargoManifestId = cm.cargoManifestId) 
+            INNER JOIN ship sh ON (cm.MMSI = sh.MMSI) 
+            WHERE cc.containerNumber = ctNumber
+        )
+    END AS position_name
+    FROM (
+        SELECT
+            CASE
+                WHEN current_timestamp >= cc.containerArrDate THEN 'in_arrival_port'
+                WHEN current_timestamp <= cc.containerDepDate THEN 'in_departure_port'
+                ELSE 'in_the_ship'
+            END AS container_position
+        FROM container_cargo cc
+        WHERE cc.containerNumber = ctNumber
+    ) q1;
+    return rc;
+    end;
+
+

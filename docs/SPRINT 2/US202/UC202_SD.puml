@@ -1,0 +1,125 @@
+@startuml
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "FindPortsUI" as UI
+participant ":PortController" as CTRL
+participant ":Ship" as ship
+participant ":ShipDynamicFields" as sdf
+participant ":TwoDTree" as 2tree
+participant ":Node" as node
+participant ":Port" as port
+
+TRAFFICMANAGER -> UI : Needs to find the closest port of a ship given its CallSign, on a certain DateTime
+activate UI
+deactivate UI
+UI -> TRAFFICMANAGER: Asks for the code and the date
+activate UI
+deactivate UI
+
+TRAFFICMANAGER -> UI : Inserts the code and the time
+activate UI
+deactivate UI
+
+UI -> CTRL : findClosestPortToShip(String callSign, Date year, LocalTime hours)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship : ship = new Ship()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL ->  ship : getCallSign()
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+CTRL ->  sdf : finalShip = checkLastPositionUpgrade(Date year, LocalTime hours, List<ShipDynamicFields> ships)
+activate CTRL
+deactivate CTRL
+activate sdf
+deactivate sdf
+
+
+
+sdf -> CTRL : return finalShip
+activate sdf
+deactivate sdf
+activate CTRL
+deactivate CTRL
+
+CTRL -> 2tree : findNearestNeighbour(double x, double y)
+activate CTRL
+deactivate CTRL
+activate 2tree
+deactivate 2tree
+
+2tree -> node : getInfo()
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+2tree -> port : getLat()
+activate 2tree
+deactivate 2tree
+activate port
+deactivate port
+
+2tree -> port : getLon()
+activate 2tree
+deactivate 2tree
+activate port
+deactivate port
+
+2tree -> node : setObject(Node node)
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+2tree -> CTRL: return closestNode
+activate 2tree
+deactivate 2tree
+activate CTRL
+deactivate CTRL
+
+
+CTRL -> 2tree : portNode = findNearestNeighbour(finalShip.getLat(), finalShip.getLon())
+activate CTRL
+deactivate CTRL
+activate 2tree
+deactivate 2tree
+
+2tree -> node : getInfo()
+activate 2tree
+deactivate 2tree
+activate node
+deactivate node
+
+2tree -> CTRL : return findNearestNeighbour(root, x, y,root, true)
+activate 2tree
+deactivate 2tree
+activate CTRL
+deactivate CTRL
+
+
+CTRL -> UI : return portNode.getInfo()
+activate node
+deactivate node
+activate CTRL
+deactivate CTRL
+
+UI --> TRAFFICMANAGER : Informs operation success
+activate UI
+deactivate UI
+
+
+@enduml

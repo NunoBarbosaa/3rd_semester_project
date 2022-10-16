@@ -1,0 +1,37 @@
+@startuml
+autonumber
+'hide footbox
+actor "Traffic Manager" as TRAFFICMANAGER
+
+participant "OrderShipsUI" as UI
+participant ":ShipDistanceController" as CTRL
+participant ":ShipDistance" as ship
+
+TRAFFICMANAGER -> UI: Asks for a list of the ships ordered by Travelled Distance or Number Of Movements
+activate UI
+deactivate UI
+
+UI -> CTRL: orderShipsByTdOrNumbOfMov(HashMap<Ship, List<ShipDynamicFields>> shipMap)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> ship: orderShips(HashMap<Ship,List<ShipDynamicFields>> shipMap)
+activate CTRL
+deactivate CTRL
+activate ship
+deactivate ship
+
+ship -> CTRL: return shipsFinal
+activate ship
+deactivate ship
+activate CTRL
+deactivate CTRL
+
+UI --> TRAFFICMANAGER: Informs operation success
+
+
+
+
+@enduml

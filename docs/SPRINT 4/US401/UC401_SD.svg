@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="975px" preserveAspectRatio="none" style="width:1635px;height:975px;background:#FFFFFF;" version="1.1" viewBox="0 0 1635 975" width="1635px" zoomAndPan="magnify"><defs><filter height="300%" id="f1jb2gdh77k2u8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="152.4512"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="454.209"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="454.209"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1561.25" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1561.25" y="605.0879"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="72.5" x2="72.5" y1="112.0117" y2="966.8457"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="694.375" x2="694.375" y1="112.0117" y2="966.8457"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="971.25" x2="971.25" y1="112.0117" y2="966.8457"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1164.375" x2="1164.375" y1="112.0117" y2="966.8457"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:5.0,5.0;" x1="1567.5" x2="1567.5" y1="112.0117" y2="966.8457"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="125" x="6.25" y="108.1665">Traffic Manager</text><ellipse cx="72.5" cy="18.75" fill="#FEFECE" filter="url(#f1jb2gdh77k2u8)" rx="10" ry="10" style="stroke:#A80036;stroke-width:2.5;"/><path d="M72.5,28.75 L72.5,62.5 M56.25,38.75 L88.75,38.75 M72.5,62.5 L56.25,81.25 M72.5,62.5 L88.75,81.25 " fill="none" filter="url(#f1jb2gdh77k2u8)" style="stroke:#A80036;stroke-width:2.5;"/><rect fill="#FEFECE" filter="url(#f1jb2gdh77k2u8)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="121.25" x="631.875" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="103.75" x="640.625" y="93.1665">:KnowPortsUI</text><rect fill="#FEFECE" filter="url(#f1jb2gdh77k2u8)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="162.5" x="887.5" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="145" x="896.25" y="93.1665">:CountryController</text><rect fill="#FEFECE" filter="url(#f1jb2gdh77k2u8)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="118.75" x="1103.125" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="101.25" x="1111.875" y="93.1665">:MatrixGraph</text><rect fill="#FEFECE" filter="url(#f1jb2gdh77k2u8)" height="39.5117" style="stroke:#A80036;stroke-width:1.875;" width="105" x="1512.5" y="66.25"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="87.5" x="1521.25" y="93.1665">:Algorithms</text><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="152.4512"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="688.75" y="906.8457"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="227.8906"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="454.209"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="605.0879"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="965" y="831.4063"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="303.3301"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="378.7695"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="454.209"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="680.5273"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1158.75" y="755.9668"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1561.25" y="529.6484"/><rect fill="#FFFFFF" filter="url(#f1jb2gdh77k2u8)" height="37.5" style="stroke:#A80036;stroke-width:1.25;" width="12.5" x="1561.25" y="605.0879"/><polygon fill="#A80036" points="673.75,147.4512,686.25,152.4512,673.75,157.4512,678.75,152.4512" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="72.5" x2="681.25" y1="152.4512" y2="152.4512"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="81.25" y="146.3806">1</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="578.75" x="95" y="146.3806">know which ports are more critical (have greater centrality) in this freight network</text><polygon fill="#A80036" points="950,222.8906,962.5,227.8906,950,232.8906,955,227.8906" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="701.25" x2="957.5" y1="227.8906" y2="227.8906"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="710" y="221.8201">2</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="232.5" x="723.75" y="221.8201">getCentrality(int numberOfPorts)</text><polygon fill="#A80036" points="1143.75,298.3301,1156.25,303.3301,1143.75,308.3301,1148.75,303.3301" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="977.5" x2="1151.25" y1="303.3301" y2="303.3301"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="986.25" y="297.2595">3</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="48.75" x="1000" y="297.2595">clone()</text><polygon fill="#A80036" points="991.25,373.7695,978.75,378.7695,991.25,383.7695,986.25,378.7695" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="983.75" x2="1157.5" y1="378.7695" y2="378.7695"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="998.75" y="372.699">4</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="55" x="1012.5" y="372.699">return g</text><polygon fill="#A80036" points="1143.75,449.209,1156.25,454.209,1143.75,459.209,1148.75,454.209" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="977.5" x2="1151.25" y1="454.209" y2="454.209"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="986.25" y="448.1384">5</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="150" x="1000" y="448.1384">removeVertex(V vert)</text><polygon fill="#A80036" points="1546.25,524.6484,1558.75,529.6484,1546.25,534.6484,1551.25,529.6484" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="977.5" x2="1553.75" y1="529.6484" y2="529.6484"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="986.25" y="523.5779">6</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="552.5" x="1000" y="523.5779">minDistGraph(Graph &lt;V,E&gt; g, Comparator&lt;E&gt; ce, BinaryOperator&lt;E&gt; sum)</text><polygon fill="#A80036" points="991.25,600.0879,978.75,605.0879,991.25,610.0879,986.25,605.0879" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="983.75" x2="1560" y1="605.0879" y2="605.0879"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="998.75" y="599.0173">7</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="402.5" x="1012.5" y="599.0173">return new MatrixGraph&lt;&gt;(g.isDirected(), g.vertices(), a)</text><polygon fill="#A80036" points="1143.75,675.5273,1156.25,680.5273,1143.75,685.5273,1148.75,680.5273" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="977.5" x2="1151.25" y1="680.5273" y2="680.5273"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="986.25" y="674.4568">8</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="132.5" x="1000" y="674.4568">adjVertices(V vert)</text><polygon fill="#A80036" points="991.25,750.9668,978.75,755.9668,991.25,760.9668,986.25,755.9668" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="983.75" x2="1157.5" y1="755.9668" y2="755.9668"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="8.75" x="998.75" y="749.8962">9</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="128.75" x="1012.5" y="749.8962">return outVertices</text><polygon fill="#A80036" points="715,826.4063,702.5,831.4063,715,836.4063,710,831.4063" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;" x1="707.5" x2="963.75" y1="831.4063" y2="831.4063"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="722.5" y="825.3357">10</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="101.25" x="745" y="825.3357">return finalList</text><polygon fill="#A80036" points="86.25,901.8457,73.75,906.8457,86.25,911.8457,81.25,906.8457" style="stroke:#A80036;stroke-width:1.25;"/><line style="stroke:#A80036;stroke-width:1.25;stroke-dasharray:2.0,2.0;" x1="78.75" x2="687.5" y1="906.8457" y2="906.8457"/><text fill="#000000" font-family="sans-serif" font-size="16.25" font-weight="bold" lengthAdjust="spacing" textLength="17.5" x="93.75" y="900.7751">11</text><text fill="#000000" font-family="sans-serif" font-size="16.25" lengthAdjust="spacing" textLength="190" x="116.25" y="900.7751">Informs operation success</text><!--MD5=[09098ca8767f69482c767ee9fd42eaff]
+@startuml
+autonumber
+hide footbox
+
+actor "Traffic Manager" as TRAFFICMANAGER
+participant ":KnowPortsUI" as UI
+participant ":CountryController" as CTRL
+participant ":MatrixGraph" as GRAPH
+participant ":Algorithms" as alg 
+
+
+TRAFFICMANAGER -> UI : know which ports are more critical (have greater centrality) in this freight network
+activate UI
+deactivate UI
+
+UI -> CTRL: getCentrality(int numberOfPorts)
+activate UI
+deactivate UI
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH: clone()
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+GRAPH -> CTRL: return g 
+activate GRAPH
+deactivate GRAPH
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH: removeVertex(V vert)
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+CTRL -> alg: minDistGraph(Graph <V,E> g, Comparator<E> ce, BinaryOperator<E> sum)
+activate CTRL
+deactivate CTRL
+activate alg
+deactivate alg 
+
+alg -> CTRL: return new MatrixGraph<>(g.isDirected(), g.vertices(), a)
+activate alg
+deactivate alg
+activate CTRL
+deactivate CTRL
+
+CTRL -> GRAPH:adjVertices(V vert)
+activate CTRL
+deactivate CTRL
+activate GRAPH
+deactivate GRAPH
+
+GRAPH -> CTRL:return outVertices
+activate GRAPH
+deactivate GRAPH
+activate CTRL
+deactivate  CTRL
+
+CTRL -> UI:return finalList
+activate CTRL
+deactivate CTRL
+activate UI
+deactivate UI
+
+
+
+
+
+
+
+
+
+
+
+
+
+UI - -> TRAFFICMANAGER: Informs operation success
+activate UI
+deactivate UI
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

@@ -1,0 +1,210 @@
+@startuml
+
+hide methods
+
+class TrafficManager{
+}
+
+class Ship {
+ - mmsi
+ - shipName
+ - imoId
+ - numberOfEnergyGenerators
+ - generatorsPowerOutput
+ - callSign
+ - vesselType
+ - lenght
+ - width
+ - capacity
+ - draft
+}
+
+class ShipDynamicFields {
+ - dateTime
+ - long
+ -lat
+ -sog
+ -cog
+ -heading
+ -position
+ -transceiverClass
+}
+
+class Port {
+ - code
+ - port
+ - continent
+ - country
+ - lat
+ - long
+}
+
+class Warehouse {
+ - identification
+ - name
+ - continent
+ - country
+ - lat
+ - long
+}
+
+class Containers {
+- identification
+- payload
+- tare
+- gross
+- isoCode
+- lenght
+- width
+- height
+- temperature
+- coordinates
+}
+
+class Client {
+}
+
+
+class CargoManifest {
+- containerId
+- containerPos
+- containerGrossWeight
+}
+
+class Truck {
+}
+
+class FleetManager {
+}
+
+class WarehouseStaff {
+}
+
+class WarehouseManager {
+}
+
+class PortStaff {
+}
+
+class PortManager {
+}
+
+class ShipCaptain {
+}
+
+class ShipChiefElectricalEngineer {
+}
+
+class TruckDriver {
+}
+
+class ShipDistance {
+- mmsi
+- vesselName
+- startTime
+- endTime
+- totalMovements
+- totalTime
+- maxSog
+- meanSog
+- maxCog
+- meanCog
+- depLatitude
+- arrLatitude
+- depLong
+- arrLong
+- travDist
+- deltDist
+}
+
+
+class ShipMovement {
+- mmsi
+- baseDateTime
+- lat
+- lon
+- sog
+- cog
+- heading
+- vesselName
+- imo
+- callSign
+- vesselType
+- lenght
+- width
+- draft
+- cargo
+- transceiverClass
+}
+
+class ShipPair {
+- mmsi1
+- mmsi2
+- departureDistance
+- arrivalDistance
+- travelDistance1
+}
+
+class ShipRoute {
+- mmsi
+- departureLat
+- arrivalLat
+- departureLong
+- arrivalLong
+- travelDistance
+}
+
+class Country {
+- continent
+- a2
+- a3
+- name
+- pop
+- cap
+- lat
+- longi
+}
+
+class SeaDist {
+- fCountry
+- fPortId
+- fPort
+- tCountry
+- tPortId
+- tPort
+- dist
+}
+
+class Borders {
+}
+
+
+TrafficManager"1" -right- "1..*"Ship : > controls
+FleetManager"1" -left- "1..*"Ship : > controls
+WarehouseManager"1" -right- "1..*"Warehouse : > manages
+WarehouseStaff"1" -left- "1..*"Warehouse : > works
+PortStaff"1" -down- "1..*"Ship : > works
+PortManager "1" -right- "1..*"Port : > manages
+ShipCaptain "1" -up- "1..*"Ship : > manages
+ShipChiefElectricalEngineer "1" -right- "1..*"Ship : > works
+TruckDriver "1" -right- "1"Truck : > oversees
+Ship "1" -down- "1"ShipDynamicFields : > has
+Ship "1" -up- "1..*"Containers  : > has
+CargoManifest "1" -right- "1..*"Containers : > controls
+Truck "1" -down- "1..*"Containers : > has
+Port"1" -up- "1..*"CargoManifest : > receives
+Warehouse"1" -down- "1..*"CargoManifest :> receives
+Ship "1" -down- "1..*"ShipDistance :> has
+Ship "1" -up- "1..*"ShipMovement :> has
+Ship "1" -right- "1..*"ShipPair :> has
+Ship "1" -up- "1..*"ShipRoute :> has
+Port "1" -down- "1..*"Ship :> contains
+Client "1" -up- "1..*"Containers :> owns
+Port "1" -up- "1..*"Country :> has
+Country "1" -left- "1..*" Borders:> has
+Country "1" -right- "1..*" SeaDist :> has
+PortStaff"1" -up- "1..*" Containers :> knows
+
+
+
+@enduml

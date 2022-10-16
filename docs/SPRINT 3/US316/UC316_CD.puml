@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class position.c{
+}
+
+class position.s {
++ checkSlots(short x,short y,short z, int containers[][y][z])
+}
+
+position.s <.up. position.c
+
+@enduml

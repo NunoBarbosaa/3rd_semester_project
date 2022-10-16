@@ -1,0 +1,22 @@
+from_country,from_port_id,from_port,to_country,to_port_id,to_port,sea_distance
+Spain,17386,Barcelona,Spain,18937,Valencia,164
+Portugal,23428,Funchal,Spain,17386,Barcelona,1123
+Portugal,23428,Funchal,Portugal,13012,Leixoes,655
+Portugal,23428,Funchal,Portugal,13390,Setubal,536
+Portugal,23428,Funchal,Spain,18937,Valencia,995
+Portugal,18433,Horta,Spain,17386,Barcelona,1639
+Portugal,18433,Horta,Portugal,23428,Funchal,678
+Portugal,18433,Horta,Portugal,13012,Leixoes,937
+Portugal,18433,Horta,Portugal,18476,Ponta Delgada,155
+Portugal,18433,Horta,Portugal,13390,Setubal,939
+Portugal,18433,Horta,Spain,18937,Valencia,1511
+Portugal,13012,Leixoes,Spain,17386,Barcelona,969
+Portugal,13012,Leixoes,Portugal,13390,Setubal,207
+Portugal,13012,Leixoes,Spain,18937,Valencia,841
+Portugal,18476,Ponta Delgada,Spain,17386,Barcelona,1497
+Portugal,18476,Ponta Delgada,Portugal,23428,Funchal,530
+Portugal,18476,Ponta Delgada,Portugal,13012,Leixoes,817
+Portugal,18476,Ponta Delgada,Portugal,13390,Setubal,804
+Portugal,18476,Ponta Delgada,Spain,18937,Valencia,1369
+Portugal,13390,Setubal,Spain,17386,Barcelona,799
+Portugal,13390,Setubal,Spain,18937,Valencia,671
